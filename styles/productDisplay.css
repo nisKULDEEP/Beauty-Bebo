@@ -1,0 +1,38 @@
+:root {
+    --primary-color: rgb(221, 2, 133);
+    --border-color: #ebebeb;
+    --font_light_color: #707070;
+  }
+.product_result_ks{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 2% auto ;
+}
+
+.sidebar_ks{
+    display: flex;
+    max-width: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    line-height: 1.6;
+}
+
+.sidebar_ks h3{
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar_ks img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.shop_by_ks div{
+    font: 90%;
+    color: grey;
+    border-bottom: 1px solid var(--border-color);
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
