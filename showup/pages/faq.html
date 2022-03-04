@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: "Roboto", sans-serif;
+        }
+
+        :root {
+            --primary-color: rgb(221, 2, 133);
+            --border-color: #ebebeb;
+            --font_light_color: #707070;
+        }
+
+        .body_faqContentBx_ks {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+        }
+
+        .accordion_ks > h3 {
+            margin: 10px;
+            font-size: 95%;
+            font-weight: 600;
+            color: #2c2c2c;
+            margin: 10px 10px;
+        }
+
+        .accordion_ks .faqContentBx_ks {
+            position: relative;
+            margin: 10px 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        /* .faq_question_ks{
+            border: 1px solid red;
+        } */
+        .faq_question_ks :hover{
+            color:var(--primary-color);
+        }
+
+        .accordion_ks .faqContentBx_ks .faq_question_ks{
+         position: relative;   
+         padding: 10px 0px;
+         cursor: pointer;
+         color: rgb(39, 39, 39);
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+        }
+       
+        .accordion_ks .faqContentBx_ks .faq_answer_ks{
+            position: relative;
+            margin: 5px;
+            height: 0;
+            transition: height 1.5s ease;
+            overflow: hidden;
+            
+            overflow-y: auto;
+        }
+
+        .accordion_ks .faqContentBx_ks.active .faq_answer_ks{
+            font-size: 10px;
+            line-height: 1.5;
+            height: max-content;
+            
+        }
+
+        .accordion_ks .faqContentBx_ks.active .faq_plus_symbol_ks{
+           transform: rotate(45degree);
+           
+       }
+      
+    </style>
+</head>
+
+<body class="body_faqContentBx_ks">
+    <section class="accordion_ks">
+        <h3>HELP & FAQS</h3>
+
+        <!-- question 1 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>HOW TO CREATE A BEAUTY ACCOUNT AND WHAT ARE THE BENIFITS OF CREATING A ACCOUNT?</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>You can register on beauty bebo using Register button () on top Right <br>
+
+                    Benefits of Registration- <br>
+                    Easy and Fast Check out <br>
+                    Reward points accumulation <br>
+                    Offers Notification
+                </p>
+            </div>
+        </div>
+
+        <!-- question 2 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>HOW TO RESET MY PASSWORD IN CASE I HAVE FORGOT IT</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>Click to my Account- Forgot Password- Enter your E-Mail and you will get a link to reset your password on your mail.</p>
+            </div>
+        </div>
+        <!-- question 3 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>HOW TO CHANGE MY ADDRESS?</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>Login in your account and you will get a button to add more address. Don’t worry; we will remember all your addresses until you delete them.</p>
+            </div>
+        </div>
+        <!-- question 4 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>HOW CAN I PAY FOR MY PURCHASES</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>You can Pay through Net Banking/Credit Card/Debit card/Wallet or Cash on Delivery.</p>
+            </div>
+        </div>
+        <!-- question 5 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>HOW CAN I CONTACT BEAUTYBEBO IN CASE I AM REQUITRED TO?</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>You can always write us on support@beautybebo.com.</p>
+            </div>
+        </div>
+        <!-- question 6 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>CAN I RETURN A PRODUCT?</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>Yes, We have a return policy for our customers. Kindly refer return policy.</p>
+            </div>
+        </div>
+        <!-- question 7 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>WHAT IS MODE OF SHIPPING FOR THE PURCHASED PRODUCTS?</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>We ship the products same day through the ecommerce courier partners.</p>
+            </div>
+        </div>
+        <!-- question 8 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>WILL I GET THE SHIPPING DETAILS ON MY MAIL OR SMS.</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>Yes, You will get the details of the shipping on your mail or phone.</p>
+            </div>
+        </div>
+        <!-- question 9 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>HOW TO CANCEL MY ORDER?</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>You can write to our customer support team on support@beautybebo.com or the cancellation. </p>
+            </div>
+        </div>
+        <!-- question 10 -->
+        <div class="faqContentBx_ks">
+            <div class="faq_question_ks">
+                <h5>HOW WILL I GET MY REFUND IN CASE OF CANCELLARTION OF ORDER?</h5>
+                <div class="faq_plus_symbol_ks">&#43;</div>
+
+            </div>
+            <div class="faq_answer_ks">
+                <p>The Money will be Refund to original payment method.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+</body>
+
+</html>
+<script>
+    const content_array_ks = document.querySelectorAll(".faqContentBx_ks");
+    // var d = document.querySelectorAll(".faq_question_ks");
+    // d.addEventListener("mouseenter", function(){
+    //     console.log(
+    //      "skdjfklsdhfghj"
+    //     )
+    //    changeColor();
+    // } )
+
+
+    // function changeColor(){
+    //     console.log(4564)
+    //     d.style.color = "red";
+    // }
+    var i;
+    for(var i = 0 ; i < content_array_ks.length; i++){
+        content_array_ks[i].addEventListener("click", function(){
+            this.classList.toggle('active');
+        })
+    }
+
+</script>

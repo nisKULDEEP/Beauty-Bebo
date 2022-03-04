@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+    <style>
+        .body{
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2" class="swiper mySwiper">
+            <div class="box3" class="swiper-wrapper">
+                <div class="content" class="swiper-slide">
+                    XYZ
+                </div>
+                <div class="content" class="swiper-slide">
+                    XYZ
+                </div>
+                <div class="content" class="swiper-slide">
+                    XYZ
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
