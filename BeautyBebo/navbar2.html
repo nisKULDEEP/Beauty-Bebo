@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/af387dc509.js" crossorigin="anonymous"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .navigation-bar {
+        list-style: none;
+        display: flex;
+
+        background-color: #dd0285;
+        color: whitesmoke;
+
+        align-items: baseline;
+        justify-content: space-around;
+      }
+      .navigation-bar ul {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+        padding: 13px 0;
+      }
+      .navigation-bar li {
+        font-weight: 700;
+        font-size: small;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+      .add-to-cart div {
+        font-weight: 700;
+        font-size: medium;
+        cursor: pointer;
+        display: flex;
+        gap: 10px;
+      }
+      .add-to-cart {
+        justify-self: stretch;
+      }
+      .icon-create {
+        display: none;
+        margin: auto 0;
+        cursor: pointer;
+        padding: 13px 0;
+      }
+      .icon-create div {
+        width: 35px;
+        height: 3px;
+        background-color: whitesmoke;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      .open-navbar .icon-bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+      }
+
+      .open-navbar .icon-bar2 {
+        opacity: 0;
+      }
+
+      .open-navbar .icon-bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -8px);
+        transform: rotate(45deg) translate(-6px, -8px);
+      }
+
+      @media only screen and (max-width: 960px) {
+        .navigation-bar ul {
+          display: none;
+        }
+        .icon-create {
+          display: block;
+          margin-left: 7%;
+        }
+
+        .add-to-cart {
+          background-color: rgba(0, 0, 0, 0.097);
+          margin-right: 7%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .navigation-bar {
+          justify-content: space-between;
+          align-content: center;
+          align-items: stretch;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navigation-bar" onclick="toggleMobileMenu(this)">
+        <div class="icon-create">
+          <div class="icon-bar1"></div>
+          <div class="icon-bar2"></div>
+          <div class="icon-bar3"></div>
+        </div>
+        <ul>
+          <li>MAKEUP<span class="material-icons-outlined expand"> expand_more </span></li>
+          <li>SKIN<span class="material-icons-outlined expand"> expand_more </span></li>
+          <li>HAIR<span class="material-icons-outlined expand"> expand_more </span></li>
+          <li>PERSONAL CARE<span class="material-icons-outlined expand"> expand_more </span></li>
+          <li>MOM & BABY CARE<span class="material-icons-outlined expand"> expand_more </span></li>
+          <li>FRAGNANCE<span class="material-icons-outlined expand"> expand_more </span></li>
+          <li>AYURVEDA<span class="material-icons-outlined expand"> expand_more </span></li>
+          <li>BRANDS<span class="material-icons-outlined expand"> expand_more </span></li>
+        </ul>
+        <div class="add-to-cart">
+          <div>
+            <i class="fas fa-shopping-bag"></i>
+            <div>MY CART -</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    function toggleMobileMenu(menu) {
+      menu.classList.toggle("open-navbar");
+    }
+  </script>
+</html>
