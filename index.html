@@ -7,12 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-     <!-- Link Swiper's CSS -->
-     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"   />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/af387dc509.js" crossorigin="anonymous"></script>
+    
     <title>Document</title>
 </head>
 
 <body class="home_page_first_half_body">
+    <!-- module 0 header starts -->
+    <div class="nav-top">
+        <img
+          class="fix-nav-relative"
+          src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
+          alt="Advertisement"
+        />
+        <a href="https://play.google.com/store/apps/details?id=com.beautybebo"
+          ><img
+            class="fix-nav-absolute"
+            src="https://www.beautybebo.com/pub/media/bb-app.png"
+            alt="google play store"
+        /></a>
+      </div>
+      <div class="nav-middle-part">
+        <div class="one">
+          <div class="nav-middle-one">
+            <a href="">
+              <img
+                src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
+                alt="BeautyBebo_logo"
+              />
+            </a>
+          </div>
+          <div class="divided-nav-second">
+            <div class="nav-middle-two">
+              <select name="categories" id="categories">
+                <option value="All categories">All Categories</option>
+                <option value="makeup">--Makeup</option>
+                <option value="mom">--Mom and Baby Care</option>
+              </select>
+              <input type="text" placeholder="Enter Your Search" />
+            </div>
+            <button class="search-nav">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+    
+        <div class="two">
+          <div class="nav-middle-three">
+            <i class="fa fa-heart"></i> <i class="fa fa-user"></i>
+            <p class="hidden dis">My Account</p>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="navigation-bar" onclick="toggleMobileMenu(this)">
+          <div class="icon-create">
+            <div class="icon-bar1"></div>
+            <div class="icon-bar2"></div>
+            <div class="icon-bar3"></div>
+          </div>
+          <ul> 
+            <li> <a href="./pages/face.html">MAKEUP</a> <span class="material-icons-outlined expand"> expand_more </span></li>
+            <li><a href="./pages/massage.html">SKIN</a><span class="material-icons-outlined expand"> expand_more </span></li>
+            <li><a href="./pages/skin.html">HAIR</a><span class="material-icons-outlined expand"> expand_more </span></li>
+            <li><a href="./pages/personalCare.html">PERSONAL CARE</a><span class="material-icons-outlined expand"> expand_more </span></li>
+            <li><a href="./pages/mom&babyCare.html">MOM & BABY CARE</a><span class="material-icons-outlined expand"> expand_more </span></li>
+            <li><a href="./pages/hair.html">FRAGNANCE</a><span class="material-icons-outlined expand"> expand_more </span></li>
+            <li><a href="./pages/ayurveda.html">AYURVEDA</a><span class="material-icons-outlined expand"> expand_more </span></li>
+            <li><a href="./pages/ayurveda.html">BRANDS</a><span class="material-icons-outlined expand"> expand_more </span></li>
+          </ul>
+          <div class="add-to-cart">
+            <div>
+              <i class="fas fa-shopping-bag"></i>
+              <div>MY CART -</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- module 0 header ends -->
+
+
     <!-- homepage module 1 starts -->
     <div class="home_page_first_half_container">
         <!-- homepage sidebar starts -->
@@ -370,261 +449,10 @@
         </div>
         <!-- module 3 heading ends -->
         <!-- module 3 products start -->
-        <div>
-        <div class="product_swiper_container" class="swiper mySwiper">
-        <div class="homepage_first_half_module3_products_container" class="swiper-wrapper" >
-        
+        <div class="homepage_first_half_module3_products_container">
             <!-- product 1 -->
-            <div class="module3_product_box_ks" class="swiper-slide">
-                <img src="./img/module-3-products/3699c478906105612174-2.jpg" alt="" />
-                <h5 class="product_name">Wow Skin Science Caffeine Face Serum</h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹599.00</strike></div>
-                    <div class="product_price">₹515.00</div>
-                    <div class="product_price_off">14% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 2 -->
-            <div class="module3_product_box_ks" class="swiper-slide">
-                <img src="./img/module-3-products/53f7f568906080030383_rvn1.jpg" alt="" />
-                <h5 class="product_name">
-                    Organic Harvest Masseuscious Damage Control Cleanser With Acai Berry
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹1,495.00</strike></div>
-                    <div class="product_price">1,420.00</div>
-                    <div class="product_price_off">5% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 3 -->
-            <div class="module3_product_box_ks" class="swiper-slide">
-                <img src="./img/module-3-products/8904304651284_1.jpg" alt="" />
-                <h5 class="product_name">
-                    Wow Skin ScienceActivated Charcoal Face Scrub
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike></strike></div>
-                    <div class="product_price">375.00</div>
-                    <div class="product_price_off"></div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 4 -->
-            <div class="module3_product_box_ks" class="swiper-slide">
-                <img src="./img/module-3-products/8904311901495_1_1_.jpg" alt="" />
-                <h5 class="product_name">
-                    Wow Skin Science Am2pm Sunscreen SPF 50 lotion
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike></strike></div>
-                    <div class="product_price">₹385.00</div>
-                    <!-- <div class="product_price_off">14% off</div> -->
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 5 -->
-            <div class="module3_product_box_ks" class="swiper-slide">
-                <img src="./img/module-3-products/8908003416557_1.png" alt="" />
-                <h5 class="product_name">
-                    Organic Harvest Cleansing Milk With Essential Oils
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹545.00</strike></div>
-                    <div class="product_price">₹491.00</div>
-                    <div class="product_price_off">10% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 6 -->
-            <div class="module3_product_box_ks" class="swiper-slide">
-                <img src="./img/module-3-products/activated_charcoal_face_mask2.jpg" alt="" />
-                <h5 class="product_name">
-                    WOW Skin Science Activated Charcoal Face Mask
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹499.00</strike></div>
-                    <div class="product_price">₹435.00</div>
-                    <div class="product_price_off">13% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 7 -->
-            <div class="module3_product_box_ks" class="swiper-slide">
-                <img src="./img/module-3-products/f0c4f25lotus00000014.jpg" alt="" />
-                <h5 class="product_name">
-                    Lotus Organics+ Bakuchiol Plant Retinol Miracle Facial Oil
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹995.00</strike></div>
-                    <div class="product_price">₹896.00</div>
-                    <div class="product_price_off">10% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 8 -->
-            <div class="module3_product_box_ks" class="swiper-slide">
-                <img src="./img/module-3-products/image1_600x.jpg" alt="" />
-                <h5 class="product_name">
-                    Lotus Herbals Whiteglow Vitamin C Radiance Cream Spf 20
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹475.00</strike></div>
-                    <div class="product_price">₹428.00</div>
-                    <div class="product_price_off">10% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
+           
         </div>
-        <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-</div>
         <!-- module 3 products ends -->
     </div>
     <!-- homepage new arrival module 3 starts -->
@@ -689,252 +517,12 @@
             </div>
         </div>
 
-        <div class="homepage_first_half_module3_products_container">
+        <div class="homepage_first_half_module5_products_container">
+            
             <!-- product 1 -->
-            <div class="module3_product_box_ks">
-                <img src="./img/module-3-products/3699c478906105612174-2.jpg" alt="" />
-                <h5 class="product_name">Wow Skin Science Caffeine Face Serum</h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹599.00</strike></div>
-                    <div class="product_price">₹515.00</div>
-                    <div class="product_price_off">14% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
+            
 
-            <!-- product 2 -->
-            <div class="module3_product_box_ks">
-                <img src="./img/module-3-products/53f7f568906080030383_rvn1.jpg" alt="" />
-                <h5 class="product_name">
-                    Organic Harvest Masseuscious Damage Control Cleanser With Acai Berry
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹1,495.00</strike></div>
-                    <div class="product_price">₹1,420.00</div>
-                    <div class="product_price_off">5% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 3 -->
-            <div class="module3_product_box_ks">
-                <img src="./img/module-3-products/8904304651284_1.jpg" alt="" />
-                <h5 class="product_name">
-                    Wow Skin ScienceActivated Charcoal Face Scrub
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike></strike></div>
-                    <div class="product_price">₹375.00</div>
-                    <div class="product_price_off"></div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 4 -->
-            <div class="module3_product_box_ks">
-                <img src="./img/module-3-products/8904311901495_1_1_.jpg" alt="" />
-                <h5 class="product_name">
-                    Wow Skin Science Am2pm Sunscreen SPF 50 lotion
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike></strike></div>
-                    <div class="product_price">₹385.00</div>
-                    <!-- <div class="product_price_off">14% off</div> -->
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 5 -->
-            <div class="module3_product_box_ks">
-                <img src="./img/module-3-products/8908003416557_1.png" alt="" />
-                <h5 class="product_name">
-                    Organic Harvest Cleansing Milk With Essential Oils
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹545.00</strike></div>
-                    <div class="product_price">₹491.00</div>
-                    <div class="product_price_off">10% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 6 -->
-            <div class="module3_product_box_ks">
-                <img src="./img/module-3-products/activated_charcoal_face_mask2.jpg" alt="" />
-                <h5 class="product_name">
-                    WOW Skin Science Activated Charcoal Face Mask
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹499.00</strike></div>
-                    <div class="product_price">₹435.00</div>
-                    <div class="product_price_off">13% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 7 -->
-            <div class="module3_product_box_ks">
-                <img src="./img/module-3-products/f0c4f25lotus00000014.jpg" alt="" />
-                <h5 class="product_name">
-                    Lotus Organics+ Bakuchiol Plant Retinol Miracle Facial Oil
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹995.00</strike></div>
-                    <div class="product_price">₹896.00</div>
-                    <div class="product_price_off">10% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product 8 -->
-            <div class="module3_product_box_ks">
-                <img src="./img/module-3-products/image1_600x.jpg" alt="" />
-                <h5 class="product_name">
-                    Lotus Herbals Whiteglow Vitamin C Radiance Cream Spf 20
-                </h5>
-                <div class="product_rating_ks">
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star checked_ks"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="module3_product_price_container_ks">
-                    <div class="product_old_price"><strike>₹475.00</strike></div>
-                    <div class="product_price">₹428.00</div>
-                    <div class="product_price_off">10% off</div>
-                </div>
-                <div class="module3_button_container_ks">
-                    <div class="module3_add_to_cart_button_ks">
-                        <button>
-                            <img src="./img/module-3-products/basket.png" alt="" />
-                            Add To Cart
-                        </button>
-                    </div>
-                    <div class="module3_like_button_ks">
-                        <button>&#9829;</button>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
 
@@ -1174,65 +762,72 @@
     <!-- Atharva module 7 ended -->
 
     <!-- Anmol footer module 8 starts -->
+    <div class="footer_anmol_ks">
 
- 
-    <!-- Anmol footer module 8 ends --> 
+    </div>
+
+    
+   
+    <!--footer-main-ajn-->
+    <!-- Anmol footer module 8 ends -->
 </body>
 
 </html>
 
-<script>
-    
+<script type="module">
 
-    let category_component_list = document.querySelectorAll(
-        ".home_page_category_component"
-    );
-    // console.log("djsfhj")
-    // console.log(home_page_category_component)
-    // home_page_category_component.addEventListener("hover");
-    // console.log(category_component_list[2]);
+import {fetchData, display} from "./components/fetchData.js";
+import product from "./components/product.js";
+import footer from "./components/footer.js";
+// import header from "./components/header.js";
+
+//     var header_anmol_ks =  document.querySelector(".header_anmol_ks");
+//     header_anmol_ks.innerHTML = header();
+
+    var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
+    footer_anmol_ks.innerHTML = footer();
+ 
+    var product_container_ks = document.querySelector(".product_container_ks");
+    var url = "../db.json";
+    var data =await fetchData(url);
     
-    for (var i = 0; i < category_component_list.length; i++) {
-        // console.log( category_component_list[i].classList.contains("cart") )
-        
-        if(category_component_list[i].classList.contains("active")){
-            category_component_list[i].addEventListener("mouseout", function (){
-                category_component_list[i].classList.remove("active");
-            })
-        }else{
-            category_component_list[i].addEventListener("mouseover", function (){
-                category_component_list[i].classList.add("active");
-            })
-        }
-       
+    var finalData = data.products;
+
+    let module5_product_container = document.querySelector(".homepage_first_half_module5_products_container");
+
+    // let temp_span_ks = document.querySelector(".temp_span_ks");
+
+    for(let j = 20; j < 24; j++){
+        // console.log(finalData[j])
+        var productCard_ks = document.createElement("div");
+        productCard_ks.innerHTML = product(finalData[j].img,finalData[j].title,finalData[j].oldprice,finalData[j].newprice,finalData[j].discount);
+
+        module5_product_container.appendChild(productCard_ks);
     }
 
-  // category_component_list.forEach(component_ks => {
-  //     component_ks.addEventListener("click", () =>{
-  //         // console.log(component_ks);
-  //         this.classList.toggle('active');
-  //         // console.log(popup)
-  //     })
+    let module3_product_container = document.querySelector(".homepage_first_half_module3_products_container");
 
-  // });
+    for(let j = 30; j < 37; j++){
+        // console.log(finalData[j])
+        var productCard_ks = document.createElement("div");
+        productCard_ks.innerHTML = product(finalData[j].img,finalData[j].title,finalData[j].oldprice,finalData[j].newprice,finalData[j].discount);
+
+        module3_product_container.appendChild(productCard_ks);
+    }
+
+    let category_component_list = document.querySelectorAll(".home_page_category_component" );
+   
+for (var i = 0; i < category_component_list.length; i++) {
+    category_component_list[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+    });
+}
+
 </script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+    var addtocart = () => {
+        console.log("cart")
+        var product 
+    }
 </script>
