@@ -14,7 +14,7 @@
     display: flex;
     max-width: 200px;
     flex-direction: column;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     align-items: space-evenly;
     line-height: 1.6;
 }
@@ -35,16 +35,4 @@
     margin-top: 1%;
     margin-bottom: 1%;
 
-}
-
-.product_container_ks{
-   display: grid;
-   grid-template-columns: repeat(4,minmax(0, 1fr));
-}
-
-.product_card_ks{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: space-evenly;
 }
