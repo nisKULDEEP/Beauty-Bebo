@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        #all_at{
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         #container{
             /* border: 2px solid red; */
-            width: 90%;
+            width: 80%;
             /* height: 100vh; */
             display: grid;
             grid-template-columns: repeat(3,1fr);
@@ -23,28 +30,31 @@
         #bestseller,#latestproducts,#mostviewed{
             /* border: 2px solid green; */
             width: 90%;
-            height: 500px;
-            margin-left: 3%;
+            height: 70vh;
+            margin-left: 1%;
         }
         .product{
-            width: 98%;
+            width: 92%;
             max-height:29%;
             min-height:29%;
-            /* box-sizing: border-box; s*/
+            /* box-sizing: border-box;  */
             border-bottom: 1px solid rgb(158, 157, 157);
             margin-top: 2%;
-            margin-left: 1%;
+            /* margin-left: 1%; */
             display: flex;
+            padding: 0% 2% 0% 2%;
+            /* border: 2px solid green; */
         }
     
         .image{
-            max-height:93%;
-            min-height:93%;
+            max-height:100%;
+            min-height:80%;
             min-width:35%;
             max-width:35%;
             /* border:1px solid yellow; */
             /* position: static; */
             margin: 1%;
+            margin-top: 0%;
         }
         .name{
             width: 98%;
@@ -73,7 +83,7 @@
         }
         .title span{
             border-bottom:3px solid #dd0285;
-            padding-bottom:2%;
+            /* padding-bottom:2%; */
             margin-left: 1%;
         }
         #advertisement,#summary{
@@ -82,20 +92,21 @@
             margin-left:5%;
             margin-top: 2%;
             margin-bottom: 1%;
-            width: 90%;
+            width: 80%;
             /* height:20px; */
             /* border: 2px solid salmon; */
         }
         #advertisement img{
             width: 96%;
             height: 240px;
-            margin-right: 5%;
-            margin-left: 1%;
+            /* margin-right: 5%; */
+            /* margin-left: 1%; */
+            height:30vh;
         }
         .summaryheading{
             font-weight: 600;
             margin: 0;
-            margin-left: 1%;
+            /* margin-left: 1%; */
             color: rgb(107, 106, 106);
             font-size: 27px;
         }
@@ -103,15 +114,35 @@
             width:96%;
             font-weight: 300;
             margin: 0;
-            margin-left: 1%;
+            /* margin-left: 1%; */
             color: rgb(107, 106, 106);
             font-size: 18px;
             margin-top: 5%;
             margin-bottom: 2%;
         }
+
+        /* .border_at{
+            border:1px solid grey;
+            /* max-height:100%;
+            min-height:29%; */
+         
+
+        @media (max-width:960px){
+            #container{
+                grid-template-columns: repeat(1,1fr);
+            }
+            #advertisement img{
+            /* width: 96%;
+            height: 240px;
+            margin-right: 5%;
+            margin-left: 1%; */
+            height:10vh;
+        }
+        }
     </style>
 </head>
 <body>
+    <div id="all_at">
     <div id="container">
 
 
@@ -120,43 +151,43 @@
 
         <div id="bestseller">
             <div class="title"><span>BEST SELLER</span></div>
-
-            <div class="product">
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/p/o/ponds_super_light_gel_oil_free_moisturiser_with_hyaluronic_acid_vitamin_e2.jpg" alt="img" class="image">
-                <div class="details">
-                    <p class="name">Ponds Super Light Gel Oil Free Moisturiser with Hyaluronic Acid+</p>
-                    <p class="name price"><b>&#8377;299.00</b></p>
-                    <button class="addtocartbutton">
-                        <span>Add To Cart</span>
-                    </button>
+          <!-- <div class="border_at"> -->
+                <div class="product">
+                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/p/o/ponds_super_light_gel_oil_free_moisturiser_with_hyaluronic_acid_vitamin_e2.jpg" alt="img" class="image">
+                    <div class="details">
+                        <p class="name">Ponds Super Light Gel Oil Free Moisturiser with Hyaluronic Acid+</p>
+                        <p class="name price"><b>&#8377;299.00</b></p>
+                        <button class="addtocartbutton">
+                            <span>Add To Cart</span>
+                        </button>
+                    </div>
                 </div>
-               
-            </div>
-            <!-- <hr> -->
+                <!-- <hr> -->
 
-            <div class="product">
+                <div class="product">
 
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/l/cl-08_strawberry_love-min_2.png" alt="img" class="image">
-                <div class="details">
-                    <p class="name">Blue Heaven Candy Matte Lip Color</p>
-                    <p class="name price"><b>&#8377;125.00</b></p>
-                    <button class="addtocartbutton">
-                        <span>Add To Cart</span>
-                    </button>
+                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/l/cl-08_strawberry_love-min_2.png" alt="img" class="image">
+                    <div class="details">
+                        <p class="name">Blue Heaven Candy Matte Lip Color</p>
+                        <p class="name price"><b>&#8377;125.00</b></p>
+                        <button class="addtocartbutton">
+                            <span>Add To Cart</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <!-- <hr> -->
+                <!-- <hr> -->
 
-            <div class="product">
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/s/dsfsdafsdfsd.jpg" alt="img" class="image">
-                <div class="details">
-                    <p class="name">Ponds Pimple Clear Facewash - Pack Of 2 </p>
-                    <p class="name price"><b>&#8377;498.00</b></p>
-                    <button class="addtocartbutton">
-                        <span>Add To Cart</span>
-                    </button>
+                <div class="product">
+                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/s/dsfsdafsdfsd.jpg" alt="img" class="image">
+                    <div class="details">
+                        <p class="name">Ponds Pimple Clear Facewash - Pack Of 2 </p>
+                        <p class="name price"><b>&#8377;498.00</b></p>
+                        <button class="addtocartbutton">
+                            <span>Add To Cart</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
+            <!-- </div>   -->
         </div>
 
 
@@ -165,7 +196,7 @@
 
             <div class="title"><span>LATEST PRODUCTS</span></div>
 
-
+            <!-- <div class="border_at"> -->
             <div class="product">
                 <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8908003416557_1.png" alt="img" class="image">
                 <div class="details">
@@ -198,12 +229,14 @@
                     </button>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
 
 
         <div id="mostviewed">
 
             <div class="title"><span>MOST VIEWED</span></div>
+            <!-- <div class="border_at"> -->
             <div class="product">
                 <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/5/o5_1_1.jpg" alt="img" class="image">
                 <div class="details">
@@ -236,6 +269,7 @@
                     </button>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
 
 
@@ -300,5 +334,7 @@
             
             All you have to do is take a step, look into our products and try us. Looking forward to seeing you!</p>
     </div>
+    </div>
 </body>
+
 </html>
