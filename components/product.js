@@ -16,7 +16,7 @@ function product(url,name,oldPrice,price,discount){
     </div>
     <div class="module3_button_container_ks">
       <div class="module3_add_to_cart_button_ks">
-        <button onclick = "addtocart()">
+        <button onclick="addtocart(${name})">
           <img src="./img/module-3-products/basket.png" alt="" />
           Add To Cart
         </button>

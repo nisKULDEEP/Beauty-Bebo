@@ -40,6 +40,7 @@
 .product_container_ks{
    display: grid;
    grid-template-columns: repeat(4,minmax(0, 1fr));
+   gap:2%;
 }
 
 .product_card_ks{

@@ -259,6 +259,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   /* font-size: 14px; */
   color: #666666;
   left: 0;
+  /* width: fit-content; */
   overflow: auto;
 
   /* line-height: 1.66; */
@@ -267,13 +268,16 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 .module3_product_box_ks {
   border-right: 1px solid var(--border-color);
   /* position: realtive; */
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* align-content: stretch; */
   min-width: 24%;
   text-align: center;
   padding-left: 10px;
+  /* vertical-align: top; */
   /* top:1; */
   /* border: 1px solid red; */
 }
@@ -286,8 +290,11 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .module3_product_box_ks > img {
-  max-width: 200px;
-  min-width: 50%;
+  display: block;
+max-width: 150px;
+max-height: 150px;
+
+  
 }
 
 .module3_product_price_container_ks {
@@ -459,12 +466,23 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   font-family: Roboto;
   /* font-size: 14px; */
   color: #666666;
- 
+  
   overflow: auto;
 }
 
 .homepage_first_half_module5_products_container img {
   width: 100%;
+ 
+}
+
+#productCard_ks{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+ 
+  /* align-content:space-evenly; */
+
+  /* background-color: #dd0285; */
 }
 /* module 5 css ends */
 
@@ -963,6 +981,20 @@ select {
     /* justify-content: center; */
     align-content: space-evenly;
   }
+
+  .homepage_first_half_module5_products_container{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    grid-template-rows: auto auto;
+    /* padding-left: 10%; */
+    
+  }
+  #productCard_ks{
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 740px) {
   .fix-nav-relative {
@@ -977,6 +1009,33 @@ select {
   .hidden {
     display: none;
   }
+  .homepage_first_half_module5_products_container{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0, 1fr));
+    /* grid-template-rows: auto auto; */
+    /* padding-left: 10%; */
+    
+  }
+  #productCard_ks{
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: auto;
+  }
+
+  .homepage_first_half_module4_container{
+    width: 90%;
+   
+    flex-direction: column;
+
+}
+
+.homepage_first_half_module4_container > img{
+
+    width: 99%;
+    margin-bottom: 5%;
+
+}
 }
 /* Anmol module 8 ends */
 
