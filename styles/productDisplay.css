@@ -15,12 +15,16 @@
 .product_result_ks{
     display: flex;
     flex-direction: row;
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
     width: 90%;
+    margin: auto;
     /* margin:  auto ; */
-    justify-content: space-around;
+    justify-content: center;
+    
     padding-top: 1%;
     padding-bottom: 1%;
-   
+   /* background-color: aqua; */
 }
 
 .sidebar_ks{
@@ -49,6 +53,7 @@
     border-bottom: 1px solid var(--border-color);
     margin-top: 1%;
     margin-bottom: 1%;
+    /* background-color: black; */
 
 }
 
@@ -56,7 +61,7 @@
    display: grid;
    grid-template-columns: repeat(4,minmax(0, 1fr));
    /* gap:2%; */
-   width: 75%;
+   width: 100%;
   
 }
 
@@ -64,6 +69,8 @@
     margin-bottom:20px;
     width: 100%;
     /* border: 1px solid red; */
+    width: fit-content;
+    height: fit-content;
 }
 
 @media only screen and (max-width: 1114px) {

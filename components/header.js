@@ -15,7 +15,7 @@ function header() {
   <div class="nav-middle-part">
     <div class="one">
       <div class="nav-middle-one">
-        <a href="">
+        <a href="../index.html">
           <img
             class="image-logo-bebo"
             src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
