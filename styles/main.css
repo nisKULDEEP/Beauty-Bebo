@@ -84,10 +84,10 @@
 .home_page_category_component.active .popup_menu_ks{
   display: flex;
 }
-.makeup_ks_anmol{
-  /* height; */
-  /* background-color: #3a3939; */
-}
+/* .makeup_ks_anmol{
+  height;
+  background-color: #3a3939;
+} */
 
 .makeup_ks_anmol.active .popup_header_ks{
   display: flex;
