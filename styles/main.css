@@ -29,7 +29,7 @@
   box-sizing: border-box;
   position: fixed;
   bottom: 30px;
-  right: 70px;
+  right: 60px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 99;
@@ -38,7 +38,7 @@
   background-color: #3a0625;
   padding: 22px;
   bottom: 29px;
-  right: 68px;
+  right: 58px;
 }
 .toppings {
   color: white;
@@ -687,7 +687,8 @@
   margin: 0;
   margin-left: 1%;
   color: rgb(107, 106, 106);
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 1.8;
   margin-top: 5%;
   margin-bottom: 2%;
 }
@@ -960,6 +961,15 @@ div.nav-middle-two {
 }
 .fa-heart {
   border: 1px solid rgb(87, 87, 87);
+}
+.fa-user {
+  padding: 8px 10px;
+}
+.fa-heart:hover,
+.fa-user:hover {
+  background-color: #dd0285;
+  color: white;
+  border-color: #dd0285;
 }
 .fix-nav-relative {
   width: 100%;
