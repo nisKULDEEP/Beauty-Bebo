@@ -1,5 +1,5 @@
 function header() {
-    return `     <div class="nav-top">
+  return `<div class="nav-top">
     <img
       class="fix-nav-relative"
       src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
@@ -15,7 +15,7 @@ function header() {
   <div class="nav-middle-part">
     <div class="one">
       <div class="nav-middle-one">
-        <a href="../index.html">
+        <a href="">
           <img
             class="image-logo-bebo"
             src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
@@ -56,7 +56,7 @@ function header() {
     </div>
   </div>
   <nav>
-    <div class="navigation-bar" onclick="toggleMobileMenu(this)">
+    <div class="navigation-bar">
       <div class="icon-create">
         <div class="icon-bar1"></div>
         <div class="icon-bar2"></div>
@@ -64,278 +64,277 @@ function header() {
       </div>
       <ul>
         <li class="makeup_ks_anmol">
-          <a href="../pages/face.html">MAKEUP</a><span class="material-icons-outlined expand">
-            expand_more
-          </span>
-
-          
-            <div class="popup_header_ks">
-                   
-              <div class="eye_section_ks">
-                  <h5>EYE</h5>
-                  Contact Lenses<br />
-                  Eye Kit<br />
-                  Eyeliner<br />
-                  Eye Shadow<br />
-                  Eye Primer<br />
-                  Eye-Palettes<br />
-                  Eye Makeup Remover<br />
-                  Eye Brow Enhancers<br />
-                  False Eyelashes<br />
-                  Kajal<br />
-                  Mascara<br />
-                  Under Eye Concealer<br />
-              </div>
-       
-
-              <div class="face_section_ks">
-                  <h5>FACE</h5>
-                  BB Cream<br />
-                  Blush<br />
-                  Bronzer<br />
-                  CC Cream<br />
-                  Contour<br />
-                  Concealer<br />
-                  Compact & Powder<br />
-                  Face Primer<br />
-                  Foundation<br />
-                  Highlighters<br />
-                  Loose Powder<br />
-                  Makeup Kits<br />
-                  Makeup Remover<br />
-                  Setting Spray<br />
-              </div>
-
-              <div class="lips_section_ks">
-                  <h5>LIPS</h5>
-                  Lipstick<br />
-                  Liquid Lipstick<br />
-                  Lip Liner<br />
-                  Lip Gloss<br />
-                  Lip Balm<br />
-                  Lip Crayon<br />
-                  Lip Stain<br />
-                  Lip Plumper<br />
-              </div>
-              <div class="nails_section_ks">
-                  <h5>NAILS</h5>
-                  Manicure & Pedicure Kits<br />
-                  Nail Polish<br />
-                  Nail Care<br />
-                  Nail Polish Sets<br />
-                  Nail Art Kits<br />
-                  Nail Polish Remover<br />
-              </div>
-
-              <div class="tools_section_ks">
-                  <h5>TOOLS BRUSHES</h5>
-                  Blush Brush<br />
-                  Eyelash Curlers<br />
-                  Eye Brush<br />
-                  Face Brush<br />
-                  Lip Brush<br />
-                  Makeup Pouches<br />
-                  Mirrors<br />
-                  Sponges & Applicators<br />
-                  Sharpeners<br />
-                  Tweezers<br />
-              </div>
-              
-          </div>
-          
-        </li>
-        <li class="makeup_ks_anmol"> <a href="../pages/skin.html">SKIN</a>
-          <span class="material-icons-outlined expand">
-            expand_more
-          </span>
+          <a href="./face.html">MAKEUP</a
+          ><span class="material-icons-outlined expand"> expand_more </span>
 
           <div class="popup_header_ks">
-            <div class="body_care_section_ks">
-                <h5>BODY CARE</h5>
-                All Cream <br />
-                Body Moisturizers<br />
-                Body Toners<br />
-                Body Sun Care<br />
-                Brightening Lotion<br />
-                Dark Circles & Wrinkles<br />
-                Day Cream<br />
-                Foot Cream<br />
+            <div class="eye_section_ks">
+              <h5>EYE</h5>
+              Contact Lenses<br />
+              Eye Kit<br />
+              Eyeliner<br />
+              Eye Shadow<br />
+              Eye Primer<br />
+              Eye-Palettes<br />
+              Eye Makeup Remover<br />
+              Eye Brow Enhancers<br />
+              False Eyelashes<br />
+              Kajal<br />
+              Mascara<br />
+              Under Eye Concealer<br />
             </div>
 
             <div class="face_section_ks">
-                <h5>FACE CARE</h5>
-                Anti- Ageing Creams<br />
-                Bleach Creams<br />
-                Brightening Cream<br />
-                Face Wash<br />
-                Facial Wipes<br />
-                Face Oil<br />
-                Face Cleansers<br />
-                Facial Kits<br />
-                Face Tools<br />
+              <h5>FACE</h5>
+              BB Cream<br />
+              Blush<br />
+              Bronzer<br />
+              CC Cream<br />
+              Contour<br />
+              Concealer<br />
+              Compact & Powder<br />
+              Face Primer<br />
+              Foundation<br />
+              Highlighters<br />
+              Loose Powder<br />
+              Makeup Kits<br />
+              Makeup Remover<br />
+              Setting Spray<br />
             </div>
 
             <div class="lips_section_ks">
-                <h5>EYE CARE</h5>
-                Dark Circles<br />
-                Eye Contour Care<br />
-                Eye Cream<br />
-                Eye Masks<br />
-                Eye Serums<br />
-                Puffiness<br />
-                Under Eye Creams<br />
-                Under Eye Wrinkles<br />
+              <h5>LIPS</h5>
+              Lipstick<br />
+              Liquid Lipstick<br />
+              Lip Liner<br />
+              Lip Gloss<br />
+              Lip Balm<br />
+              Lip Crayon<br />
+              Lip Stain<br />
+              Lip Plumper<br />
+            </div>
+            <div class="nails_section_ks">
+              <h5>NAILS</h5>
+              Manicure & Pedicure Kits<br />
+              Nail Polish<br />
+              Nail Care<br />
+              Nail Polish Sets<br />
+              Nail Art Kits<br />
+              Nail Polish Remover<br />
+            </div>
+
+            <div class="tools_section_ks">
+              <h5>TOOLS BRUSHES</h5>
+              Blush Brush<br />
+              Eyelash Curlers<br />
+              Eye Brush<br />
+              Face Brush<br />
+              Lip Brush<br />
+              Makeup Pouches<br />
+              Mirrors<br />
+              Sponges & Applicators<br />
+              Sharpeners<br />
+              Tweezers<br />
+            </div>
+          </div>
+        </li>
+        <li class="makeup_ks_anmol">
+          <a href="./skin.html">SKIN</a>
+          <span class="material-icons-outlined expand"> expand_more </span>
+
+          <div class="popup_header_ks">
+            <div class="body_care_section_ks">
+              <h5>BODY CARE</h5>
+              All Cream <br />
+              Body Moisturizers<br />
+              Body Toners<br />
+              Body Sun Care<br />
+              Brightening Lotion<br />
+              Dark Circles & Wrinkles<br />
+              Day Cream<br />
+              Foot Cream<br />
+            </div>
+
+            <div class="face_section_ks">
+              <h5>FACE CARE</h5>
+              Anti- Ageing Creams<br />
+              Bleach Creams<br />
+              Brightening Cream<br />
+              Face Wash<br />
+              Facial Wipes<br />
+              Face Oil<br />
+              Face Cleansers<br />
+              Facial Kits<br />
+              Face Tools<br />
+            </div>
+
+            <div class="lips_section_ks">
+              <h5>EYE CARE</h5>
+              Dark Circles<br />
+              Eye Contour Care<br />
+              Eye Cream<br />
+              Eye Masks<br />
+              Eye Serums<br />
+              Puffiness<br />
+              Under Eye Creams<br />
+              Under Eye Wrinkles<br />
             </div>
             <div class="image">
-                <img src="https://www.beautybebo.com/pub/media/mega-menu/imgpsh_fullsize_anim.png" alt="" />
+              <img
+                src="https://www.beautybebo.com/pub/media/mega-menu/imgpsh_fullsize_anim.png"
+                alt=""
+              />
             </div>
-        </div>
+          </div>
         </li>
-        <li class="makeup_ks_anmol"> 
-          <a href="../pages/hair.html">HAIR</a><span class="material-icons-outlined expand">
-            expand_more
-          </span>
+        <li class="makeup_ks_anmol">
+          <a href="./hair.html">HAIR</a
+          ><span class="material-icons-outlined expand"> expand_more </span>
           <div class="popup_header_ks">
             <div class="hair_care_section_ks">
-                <h5>HAIR CARE</h5>
-                Color Protection <br>
-                Dandruff <br>
-                Dry Shampoo <br>
-                Gels & Waxes <br>
-                Hair Spray <br>
-                Hair Color/ Dye <br>
-                Hair Creams & Masks <br>
-                Hair <br>
+              <h5>HAIR CARE</h5>
+              Color Protection <br />
+              Dandruff <br />
+              Dry Shampoo <br />
+              Gels & Waxes <br />
+              Hair Spray <br />
+              Hair Color/ Dye <br />
+              Hair Creams & Masks <br />
+              Hair <br />
             </div>
 
             <div class="hair_loss_section_ks">
-                <h5>HAIR LOSS</h5>
+              <h5>HAIR LOSS</h5>
 
-                Conditioner <br>
-                Hair Oil <br>
-                Hair Serum <br>
-                Hair Growth solutions <br>
-                Shampoo <br>
+              Conditioner <br />
+              Hair Oil <br />
+              Hair Serum <br />
+              Hair Growth solutions <br />
+              Shampoo <br />
             </div>
-
 
             <div class="image">
-                <img src="https://www.beautybebo.com/pub/media/mega-menu/hair.png" alt="" />
+              <img
+                class="growingChild"
+                src="https://www.beautybebo.com/pub/media/mega-menu/hair.png"
+                alt=""
+              />
             </div>
-        </div>
+          </div>
         </li>
         <li class="makeup_ks_anmol">
-          <a href="../pages/personalCare.html"> PERSONAL CARE</a><span class="material-icons-outlined expand">
-            expand_more
-          </span>
+          <a href="./personalCare.html"> PERSONAL CARE</a
+          ><span class="material-icons-outlined expand"> expand_more </span>
           <div class="popup_header_ks">
             <div class="bath_section_ks">
-                <h5>BATH & BODY</h5>
-                Body Cleansers <br>
-                Body Massage Oil<br>
-                Body Wash<br>
-                Creams<br>
-                Essential Oils<br>
-                Foot Cream<br>
-                Scrubs & Exfoliants<br>
-                Ubtan & Face Packs<br>
+              <h5>BATH & BODY</h5>
+              Body Cleansers <br />
+              Body Massage Oil<br />
+              Body Wash<br />
+              Creams<br />
+              Essential Oils<br />
+              Foot Cream<br />
+              Scrubs & Exfoliants<br />
+              Ubtan & Face Packs<br />
             </div>
 
             <div class="hair_loss_section_ks">
-                <h5>BATH & SHOWER</h5>
-                Body Soaps<br>
-                Shower Gel<br>
+              <h5>BATH & SHOWER</h5>
+              Body Soaps<br />
+              Shower Gel<br />
             </div>
 
             <div class="hair_loss_section_ks">
-                <h5>BATHING ACCESSORIES</h5>
-                Bath Brushes<br>
-                Loofahs<br>
-                Shower Caps<br>
-                Sponges<br>
+              <h5>BATHING ACCESSORIES</h5>
+              Bath Brushes<br />
+              Loofahs<br />
+              Shower Caps<br />
+              Sponges<br />
             </div>
-
 
             <div class="image">
-                <img src="https://www.beautybebo.com/pub/media/sm/makeup.png" alt="" />
+              <img
+                class="turnleft"
+                src="https://www.beautybebo.com/pub/media/sm/makeup.png"
+                alt=""
+              />
             </div>
-        </div>
+          </div>
         </li>
         <li class="makeup_ks_anmol">
-          <a href="../pages/mom&babyCare.html">MOM & BABY CARE </a><span class="material-icons-outlined expand">
-            expand_more
-          </span>
+          <a href="./mom&babyCare.html">MOM & BABY CARE </a
+          ><span class="material-icons-outlined expand"> expand_more </span>
 
           <div class="popup_header_ks">
             <div class="baby_care_section_ks">
-                BABY CARE<br>
-                Bath time<br>
-                Diapers<br>
-                Lotions & Creams<br>
-                Oils<br>
-                Powder<br>
-                Shampoo<br>
-                Soaps<br>
-                Sterilizer & Cleaners<br>
+              <h5>BABY CARE</h5>
+
+              Bath time<br />
+              Diapers<br />
+              Lotions & Creams<br />
+              Oils<br />
+              Powder<br />
+              Shampoo<br />
+              Soaps<br />
+              Sterilizer & Cleaners<br />
             </div>
 
             <div class="hair_loss_section_ks">
-                <h5>MOM CARE</h5>
-                Lotions & Creams<br>
-                personal Care<br>
+              <h5>MOM CARE</h5>
+              Lotions & Creams<br />
+              personal Care<br />
             </div>
-
 
             <div class="image">
-                <img src="https://www.beautybebo.com/pub/media/mega-menu/baby_care.png" alt="" />
+              <img
+                class="growingChild"
+                src="https://www.beautybebo.com/pub/media/mega-menu/baby_care.png"
+                alt=""
+              />
             </div>
-        </div>
+          </div>
         </li>
         <li class="makeup_ks_anmol">
-          <a href="../pages/massage.html">FRAGNANCE</a><span class="material-icons-outlined expand">
-            expand_more
-          </span>
+          <a href="./massage.html">FRAGNANCE</a
+          ><span class="material-icons-outlined expand"> expand_more </span>
 
           <div class="popup_header_ks">
             <div class="fragrance_section_ks">
               <h5>NATURAL SKIN CARE</h5>
-              Body Wash <br>
-              Body Lotion<br>
-              Cleansers<br>
-              Cream<br>
-              Eye Care<br>
-              Face Wash<br>
-              Gel<br>
-              Lip Care<br>
-              Mask<br>
-              Pack<br>
-              Scrub<br>
-              Sun Protection<br>
+              Body Wash <br />
+              Body Lotion<br />
+              Cleansers<br />
+              Cream<br />
+              Eye Care<br />
+              Face Wash<br />
+              Gel<br />
+              Lip Care<br />
+              Mask<br />
+              Pack<br />
+              Scrub<br />
+              Sun Protection<br />
             </div>
             <div class="fragrance_section_ks">
-             <h5>NATURAL HAIR CARE</h5> 
-Conditioner <br>
-Hair Oils<br>
-Hair Serum<br>
-Hair Gel<br>
-Shampoo<br>
+              <h5>NATURAL HAIR CARE</h5>
+              Conditioner <br />
+              Hair Oils<br />
+              Hair Serum<br />
+              Hair Gel<br />
+              Shampoo<br />
             </div>
-
-        </div>
+          </div>
         </li>
-        <li class="makeup_ks_anmol" >
-          <a href="../pages/ayurveda.html">AYURVEDA</a><span class="material-icons-outlined expand">
-            expand_more
-          </span>
+        <li class="makeup_ks_anmol">
+          <a href="./ayurveda.html">AYURVEDA</a
+          ><span class="material-icons-outlined expand"> expand_more </span>
 
           <div class="popup_header_ks">
             <div class="ayurveda_section_ks">
-              Perfumes <br>
-              Deodorants roll ons <br>
-              Body Mist/Spray <br>
+              Perfumes <br />
+              Deodorants roll ons <br />
+              Body Mist/Spray <br />
             </div>
-        </div>
-
+          </div>
         </li>
         <li>
           BRANDS<span class="material-icons-outlined expand">
@@ -352,7 +351,7 @@ Shampoo<br>
       </div>
     </div>
     <!-- <div class="div-hidden-nav">safdasdhaijhdsakjlkasj</div> -->
-  </nav>`
+  </nav>`;
 }
 
 export default header;
