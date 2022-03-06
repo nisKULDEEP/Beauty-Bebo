@@ -784,8 +784,11 @@ footer {
   list-style: circle;
   list-style-position: inside;
   margin-bottom: 10px;
+  transition: 0.2s;
 }
-
+.categories span {
+  transition: 0.2s;
+}
 .footer-main-aj li:hover,
 .footer-main-aj a:hover,
 .categories span:hover {
