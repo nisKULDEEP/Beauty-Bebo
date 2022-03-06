@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navigation-bar {
+  list-style: none;
+  display: flex;
+
+  background-color: #dd0285;
+  color: whitesmoke;
+
+  align-items: baseline;
+  justify-content: space-around;
+  position: relative;
+}
+.navigation-bar ul {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 13px 0;
+}
+.navigation-bar li {
+  font-weight: 700;
+  font-size: small;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.add-to-cart div {
+  font-weight: 700;
+  font-size: medium;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+.add-to-cart {
+  justify-self: stretch;
+}
+.icon-create {
+  display: none;
+  margin: auto 0;
+  cursor: pointer;
+  padding: 13px 0;
+}
+.icon-create div {
+  width: 35px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open-navbar .icon-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open-navbar .icon-bar2 {
+  opacity: 0;
+}
+
+.open-navbar .icon-bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+.nav-middle-three {
+  align-items: center;
+}
+.divided-nav-second {
+  display: flex;
+  align-items: stretch;
+  /* width: 4%; */
+  justify-content: space-around;
+}
+
+.fix-nav-relative,
+.nav-top {
+  position: relative;
+}
+.nav-top:hover {
+  cursor: pointer;
+}
+.fix-nav-absolute {
+  position: absolute;
+  right: 3%;
+  bottom: 10px;
+  width: 12%;
+}
+div.nav-middle-two > * {
+  border: none;
+  color: #767474;
+  outline: none;
+  width: 200px;
+}
+div.nav-middle-two {
+  border: 1px solid #d1cfcf;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.nav-middle-three {
+  display: flex;
+  gap: 3vh;
+}
+.nav-middle-part,
+.nav-middle-part .one,
+.nav-middle-part .two {
+  display: flex;
+  background-color: rgb(255, 249, 250);
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-middle-part .one {
+  gap: 10%;
+}
+.fa-heart,
+.fa-user {
+  padding: 8px;
+  font-size: larger;
+  border: #ebe9e9 1px solid;
+}
+.fa-heart {
+  border: 1px solid rgb(87, 87, 87);
+}
+.fix-nav-relative {
+  width: 100%;
+}
+.search-nav {
+  border: none;
+  color: white;
+  background-color: #dd0285;
+  padding: 0%;
+  border: none;
+  cursor: pointer;
+}
+select {
+  cursor: pointer;
+}
+/* After today */
+.search-nav-text {
+  margin-left: 50px;
+}
+.fa-search {
+  padding: 0 15px;
+}
+@media only screen and (max-width: 960px) {
+  .navigation-bar ul {
+    display: none;
+  }
+  .icon-create {
+    display: block;
+    margin-left: 7%;
+  }
+
+  .add-to-cart {
+    background-color: rgba(0, 0, 0, 0.097);
+    margin-right: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation-bar {
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+  }
+  .fix-nav-relative {
+    width: 150%;
+  }
+  .fix-nav-absolute {
+    width: 20%;
+  }
+  .nav-middle-part {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+  .nav-middle-part .one {
+    display: block;
+  }
+  .image-logo-bebo {
+    /* margin-left: 30; */
+    margin: 0 5vh;
+    width: 90%;
+    height: 90px;
+  }
+  .divided-nav-second {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .fix-nav-relative {
+    width: 150%;
+  }
+  .fix-nav-absolute {
+    width: 20%;
+  }
+  .nav-middle-part {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+/* .div-hidden-nav {
+  width: 90%;
+  margin: auto;
+  border: 1px solid rgb(187, 169, 169);
+  border-style: none solid solid solid;
+} */

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/af387dc509.js" crossorigin="anonymous"></script>
+    <title>Payment</title>
+    <style>
+        .selectmethod_at{
+            border-bottom: 1px solid grey;
+            padding: 4%;
+            font-size: 18px;
+
+        }
+
+        #checkoutcontainer_at{
+            width:80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid blue; */
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        #paymentmode_at{
+            width:50%;
+        }
+        #paymentmode_at span{
+            width:90%;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            /* border: 2px solid red; */
+        }
+        #button_showdetail_at{
+            display: flex;
+            width: 90%;
+            flex-direction: row-reverse;
+        }
+        #button_showdetails_at{
+            padding: 1%;
+            width: 127px;
+            border: none;
+            background-color: rgb(66, 65, 65);
+            color: white;
+            font-size: 16px;
+        }
+        #button_showdetails_at:hover{
+            background-color: #dd0285;
+            color: white;
+        }
+        #h6_aftercod_at{
+            width: 100%;
+            font-size: 50px;
+            margin: 133px;
+        }
+
+        #summary{
+            border: 2px solid green;
+            margin-left: 100px;
+            width:38%
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="to-top">
+        <i class="fas fa-angle-double-up"></i>
+      </div>
+    <div class="header_anmol_ks"></div>
+    <div id="checkoutcontainer_at">
+        <div id="paymentmode_at">
+            <span>Payment Method</span>
+
+            
+            <div class="selectmethod_at" id="cod_div"><input type="radio" value="Cash On Delivery" id="cod_at" onclick="cashondelivery()" >Cash On Delivery</div>
+            <div class="selectmethod_at"><input type="radio"  id="card_at" value="Debit/Credit Card/Net banking/Wallet - PayUmoney" onclick="Cardpayment()">Debit/Credit Card/Net banking/Wallet - PayUmoney</div>
+        </div>
+
+        <div id="summary">
+            <div id="Ordersummary">
+                <div id="ordersummaryheading"><h3>Order Summary</h3></div>
+                <div class="cartsubtotal">
+                    <span>Subtotal</span>
+                    <span>&#8377;</span>
+                </div>
+                <div class="cartsubtotal">
+                    <span>Shipping</span>
+                    <span>&#8377;0.00</span>
+                </div>
+                <div class="cartsubtotal">
+                    <span>GST</span>
+                    <span>&#8377;</span>
+                </div>
+                <div class="cartsubtotal">
+                    <span>Order Total Incl. GST</span>
+                    <span>&#8377;</span>
+                </div>
+                <div class="cartsubtotal">
+                    <span>Order Total Excl. GST</span>
+                    <span>&#8377;</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer_anmol_ks">
+
+    </div>
+</body>
+<script type="module" src="../js/payment.js"></script>
+</html>

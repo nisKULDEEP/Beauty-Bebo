@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/main.css"> -->
+    <link rel="stylesheet" href="../styles/main.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/af387dc509.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+    <style>
+        #cartcontaineer_at{
+            /* border:2px solid red; */
+            /* width: 90%; */
+            /* margi */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* margin-bottom: 300px; */
+        }
+
+        #products_estimate_at{
+            width: 90%;
+            /* border: 2px solid rgb(3, 99, 3); */
+            display: grid;
+
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template: "a1 a1 a2";
+
+        }
+        #cartestimate_at{
+            /* height: 80vh; */
+            grid-area: a2;
+            
+
+        }
+        .cartgrid_at{
+             border: 1px solid grey;
+            align-items: center;
+            display: flex;
+            flex-direction:column ;
+            /* height: 130vh; */
+
+        }
+        #selstate{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+         
+            justify-content: center;
+         
+             
+        }
+        
+        .cartcommcont_at{
+            height: 38px;
+            border: 1px solid grey;
+            width:99%;
+           
+            margin-bottom: 2%;
+            margin-top: 2%;
+         
+        }
+        .cartcommcont_at input{
+            font: 80%;
+        }
+       
+        .cartinpcount{
+            font-size: 19px;
+        }
+        #cart_esti_at{
+            height:38px;
+           
+            margin-bottom: 2%;
+            width: 90%;
+            border: 1px solid grey;
+            display: flex;
+            
+            align-items: center;
+            
+        }
+        
+        
+        #cartproducts_at{
+            display: flex;
+            width:96%;
+            /* border: 2px solid salmon; */
+            flex-direction: column;
+            grid-area:a1 ;
+            
+        }
+
+        
+        .carttd_at{
+            display: flex;
+            align-items: center;
+            padding: 3%;
+
+        }
+        .carttd_at img{
+            width: 154px;
+            height: 144px;
+           
+        }
+        .carttd_at{
+            padding: 3%;
+        }
+        .cartfontsize_at{
+            font-size: 16px;
+            padding-left: 2%;
+        }
+        
+        .carttd3_at input{
+            width: 32px;
+            height: 28px;
+            margin:18px;
+            margin-left: 35%;
+        }
+        #tbl_at th{
+            border-bottom: 2px solid grey;
+            padding: 2%;
+        }
+        #tbl_at th{
+            border-bottom: 2px solid grey;
+            padding: 2%;
+        }
+        .wid_at{
+            width: 60%;
+        }
+        
+        #cartdeletebutton_at{
+            width:116px;
+            height:33px;
+            margin: 10px;
+            background-color: white;
+            border: 1px solid grey;
+        }
+        #carteditbutton_at{
+            width:80px;
+            height:33px;
+            margin: 10px;
+            background-color: white;
+            border: 1px solid grey;
+        }
+        #cartbtncontainer{
+            /* border: 2px solid green; */
+            padding-left: 28px;
+        }
+
+        #cartdeletebutton_at:hover{
+            background-color: rgb(221, 2, 133);
+            color:white;
+            border: none;
+        }
+        #carteditbutton_at:hover{
+            background-color: rgb(221, 2, 133);
+            color:white;
+            border: none;
+        }
+        #continueshopping_at{
+            padding-left: 35px;
+            /* border: 2px solid brown; */
+            height: 51px;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #continueshopping_at a{
+            text-decoration: none;
+            background-color:rgb(221, 2, 133);
+            color: white;
+            padding: 10px;
+           
+        }
+        #contshopping_at{
+            margin-right: 521px;
+        }
+        #updatecart_at{
+            width: 98px;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        #continueshopping_at a:hover{
+            background-color:grey;
+            color: white;
+        }
+        
+        #cartsummary_div_at{
+            width: 100%;
+        }
+
+        #cartshipping_at span{
+            /* border: 2px solid purple; */
+            padding-right:10px;
+            
+        }
+        #cartshippingspan_at{
+            margin-left: 40px;
+        }
+        #cartcheckoutbutton_at{
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid purple; */
+            
+        }
+        
+        #cartcheckoutbutton_at button{
+            padding: 5px;
+            height:45px;
+            background-color: grey;
+            color: white;
+            border: none;
+        }
+        #cartcheckoutbutton_at button:hover{
+            background-color: rgb(221, 2, 133);
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="to-top">
+        <i class="fas fa-angle-double-up"></i>
+      </div>
+    <div class="header_anmol_ks"></div>
+    <div id="cartcontaineer_at">
+        <h3>Shopping Cart</h3>
+
+        <div id="products_estimate_at">
+
+            <div id="cartproducts_at" >
+                <table id="tbl_at" >
+                    <tr class="tblrow_at">
+                        <th class="wid_at">Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </table>
+                <div id="continueshopping_at">
+                    <a href="./index.html" id="contshopping_at"> Continue Shopping</a>
+                    <a href="#" id="updatecart_at"> Updatecart</a>
+                </div>
+            </div>
+
+            <div id="cartestimate_at" class="cartgrid_at">
+                <div id="cartsummary_div_at"><h3>Summary</h3></div>
+                 <div  id="cart_esti_at" class="cartcomm2_at">Estimate and Shipping Tax</div>
+                 <div id="selstate">
+                     <b>Country</b>
+                     <!-- <br> -->
+                     <select name="country" id="cartcountry_at" class="cartcommcont_at cartcomm2_at">
+                         <option value="India">India</option>
+                     </select>
+                     <!-- <br> -->
+                     <b>State</b>
+                     <!-- <br> -->
+                     <select name="state" id="cartstate_at" class="cartcommcont_at">
+                         <option value="Andhra Pradesh">Andhra Pradesh</option>
+                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                         <option value="Assam">Assam</option>
+                         <option value="Bihar">Bihar</option>
+                         <option value="Chhattisgarh">Chhattisgarh</option>
+                         <option value="Delhi">Delhi</option>
+                         <option value="Goa">Goa</option>
+                         <option value="Gujrat">Gujrat</option>
+                         <option value="Haryana">Haryana</option>
+                         <option value="Himachal Pradesh">Himachal Pradesh</option>
+                         <option value="Jharkand">Jharkand</option>
+                         <option value="Karnataka">Karnataka</option>
+                         <option value="Kerla">Kerla</option>
+                         <option value="Madhya Pradesh">Madhya Pradesh</option>
+                         <option value="Maharashtra">Maharashtra</option>
+                         <option value="Manipur">Manipur</option>
+                         <option value="Meghalaya">Meghalaya</option>
+                         <option value="Mizoram">Mizoram</option>
+                         <option value="Nagaland">Nagaland</option>
+                         <option value="Odisha">Odisha</option>
+                         <option value="Punjab">Punjab</option>
+                         <option value="Rajasthan">Rajasthan</option>
+                         <option value="Sikkim">Sikkim</option>
+                         <option value="Tamil Nadu">Tamil Nadu</option>
+                         <option value="Telangana">Telangana</option>
+                         <option value="Tripura">Tripura</option>
+                         <option value="Uttar Pradesh">Uttar Pradesh</option>
+                         <option value="Uttarakhand">Uttarakhand</option>
+                         <option value="West Bengal">West Bengal</option>
+                     </select>
+                     <!-- <br> -->
+                     <label for="zipcode"><b>Zipcode</b></label>
+                     <!-- <br> -->
+                     <input type="text" id="cartzipcode_at" class="cartcommcont_at cartinpcount">
+                     <!-- <br> -->
+
+                     <div id="cartsubtotal_at" class="cartcommcont_at">
+                         <span >Subtotal</span>
+                         <span id="total" cartcommcont_at>&#8377; 0.00</span>
+                     </div>
+
+                     <div id="cartshipping_at" class="cartcommcont_at">
+                         <span><b>Shipping</b><br>(Best Way-max & Business days)</span>
+                         <span id="cartshippingspan_at">&#8377; 0.00</span>
+                     </div>
+
+                     <input type="text" class="cartcommcont_at  cartinpcount" id="cartdiscountcode_at" placeholder="Apply Coupon Code">
+                     <!-- <br> -->
+                     <hr>
+                     <div id="cartcheckoutbutton_at"><button onclick="location.href='checkout.html'">PROCEED TO CHECKOUT</button></div>
+                 </div>
+                </select>
+               <!-- <input type="text" name="" id="" onmouseleave=""> -->
+        </div>
+
+    </div>
+    <div class="footer_anmol_ks" style="width: 100vw;">
+
+    </div>
+</body>
+
+<!-- <script type="module" src="../js/cart.js"></script> -->
+
+<script type="module">
+    
+import footer from "../components/footer.js";
+import header from "../components/header.js";
+
+var header_anmol_ks =  document.querySelector(".header_anmol_ks");
+header_anmol_ks.innerHTML = header();
+
+var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
+footer_anmol_ks.innerHTML = footer();
+//Getting Input For quantity in td3 section
+
+
+
+let cont = document.getElementById("cartproducts_at");
+
+let table = document.getElementById("tbl_at");
+
+let cart = JSON.parse(localStorage.getItem("cart"));
+// console.log(cart);
+var total = 0;
+
+cart.forEach(function (user){
+    // console.log(user);
+    total+= parseInt(user.price);
+    let tr = document.createElement("tr");
+    tr.setAttribute("class","tblrow_at");
+    
+    let td1 = document.createElement("td");
+    td1.innerHTML=`<img src="${user.img}" alt="">
+                    <span>${user.name}</span>`;
+    td1.setAttribute("class","carttd_at cartfontsize_at");
+
+    let td2 = document.createElement("td");
+    td2.innerHTML=`<div>${user.price}</div>`;
+    td2.setAttribute("class","cartfontsize_at");
+
+//////////TD3/////////////////////
+
+    let td3 = document.createElement("td");
+    td3.innerHTML=`<input type="text" name="quantity" id="prod_quantity_at">`;
+    td3.setAttribute("class","carttd3_at");
+
+/////////////////////////////////////    
+//    document.getElementById("prod_quantity_at").addEventListener('change', changesubtotal);
+
+    let td4 = document.createElement("td");
+    td4.innerHTML=`<div>${user.price}</div>`;
+    td4.setAttribute("class","carttd4_at cartfontsize_at");
+    
+    let deleteitem = document.createElement("div");
+    deleteitem.innerHTML=`<div id="cartbtncontainer"><button onclick="" id="carteditbutton_at">Edit</button>
+                             <button onclick="funcdeleteitem('${user.name}')" id="cartdeletebutton_at">DeleteItem</button></div>`;
+    let hr =  document.createElement("hr");
+
+    tr.append(td1,td2,td3,td4);
+    table.append(tr,deleteitem);
+
+
+});
+
+// console.log(total);
+
+let tot = document.getElementById("total");
+// tot.innerHTML="";
+tot.innerHTML=`&#8377;${total}`;
+// location.reload();
+
+function funcdeleteitem(delet){
+    cart = JSON.parse(localStorage.getItem("cart"));
+    console.log(cart);
+
+    // let i =0;
+    const indedxD = cart.findIndex(user => user.name === delet)
+    console.log(indedxD);
+    
+    cart.splice(indedxD,1);
+    console.log(cart);
+    // displayfunction(cart);
+    
+
+    cart = localStorage.setItem("cart",JSON.stringify(cart));
+    location.reload()
+
+}
+
+
+
+
+// function displayfunction(cart){
+//     cart.forEach(()=>
+// {
+    
+// })
+// }
+
+
+//     total -= user.price;
+//     cart.splice(user,1);
+//     tot.innerHTML=`${total}`;
+//     // location.reload();
+// }
+// i++;
+</script>
+</html>
