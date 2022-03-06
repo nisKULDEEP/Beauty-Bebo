@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /* width: 80%; */
+            /* border: 2px solid red; */
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-family:sans-serif;
+        }
+
+        #loginsection_at{
+            width: 80%;
+            /* border:2px solid green; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            grid-gap: 50px;
+        }
+        
+        .logandregiter_at{
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr); */
+            border: 1px solid grey;
+            height: 40vh;
+
+        }
+        .logandregiter_at>div{
+            margin:3%;
+            /* border: 2px solid purple; */
+        }
+        .logandregiter_at form{
+            display: flex;
+            flex-direction: column;
+            margin:3%;
+            /* padding: 2%; */
+        }
+        /* .logandregiter_at button{
+            display: flex;
+            /* flex-direction:; */
+            /* margin:7%;
+            border: 2px solid yellow; */ 
+        /* } */
+        
+        .logandregiter_at span{
+            display: flex;
+            /* flex-direction: column; */
+            /* margin:7%; */
+            margin:0px;
+            padding: 0px;
+            align-items: center;
+        }
+        .logandregiter_at button{
+            margin-left:7%;
+            padding: 0%;
+            margin-right: 5%;
+            height: 38px;
+            width:31%;
+            color: white;
+            border:none;
+            background-color: rgb(71, 67, 67);
+        }
+        .logandregiter_at button:hover{
+            background-color:rgb(221, 2, 133) ;
+        }
+        .login_heading_at{
+            cursor:pointer;
+            border-bottom: 1px solid grey;
+            font-size: 20px;
+        }
+        #forgotpwd_at{
+            text-decoration: none;
+            color:black;
+        }
+        #forgotpwd_at:hover {
+            /* text-decoration: none; */
+            color:rgb(221, 2, 133);
+        }
+
+        .label_at{
+            margin-bottom: 2% ;
+            margin-top: 1% ;
+        }
+
+        .input_at{
+            height: 30px;
+            /* margin-bottom: 2%; */
+        }
+        .loginheader_at{
+            width: 80%;
+            font-size: 2rem;
+            /* border: 2px solid green; */
+            margin:auto;
+            color: rgb(85, 83, 83);
+        }
+        @media (max-width:960px){
+            #loginsection_at{
+            /* width: 80%;
+            /* border:2px solid green; */
+            display: grid; 
+            grid-template-columns: repeat(1,1fr);
+            /* margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            grid-gap: 50px; */
+        }
+        .logandregiter_at button{
+            
+            padding-left: 2%;
+            padding-left: 2%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="loginheader_at"><h4>Customer Login</h4></div>
+
+    <div id="container">
+        <div id="loginsection_at">
+            
+            <!-- input section -->
+            <div id="logininput_at" class="logandregiter_at">
+                
+                 <div class="login_heading_at">REGISTRED CUSTOMERS</div>
+                  <div class="logintext_at">If you have an account, sign in with your email address.</div>
+                    <form action="">
+                        <label for="email" class="loginlabel_at">Email</label>
+                        <input type="email" id="loginemail_at" class="input_at">
+                        <label for="password" class="label_at">Password</label>
+                        <input type="password" id="loginpassword_at" class="input_at">
+                    </form>
+                    <!-- Button -->
+                    <span>
+                        <button class="login_button_at" onclick="checkdb()">SIGN IN</button>
+                        <a href="#" id="forgotpwd_at"> Forgot Your Password?</a>
+                    </span>
+
+                </div>
+
+                <div id="login_register_at" class="logandregiter_at">
+                    <div class="login_heading_at">NEW CUSTOMERS</div>
+                    <div class="logintext_at">Creating an account has many benefits: check out faster, keep more than one address, track orders and more.
+                    </div>
+                    <button class="login_button_at" onclick="gotoregister()">CREATE AN ACCOUNT</button>
+                </div>
+         </div>    
+    </div>
+</body>
+<script src="./login.js"></script>
+</html>
