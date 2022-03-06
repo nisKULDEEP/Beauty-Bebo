@@ -1,5 +1,5 @@
-function footer(){
-    return `<footer>
+function footer() {
+  return `<footer>
     <div class="footer-main-aj">
       <div class="footer-top">
         <div class="divide">
@@ -69,7 +69,7 @@ function footer(){
                 <li><a href="/order-return">Order Returns</a></li>
                 <li><a href="/wishlist/">Wishlist</a></li>
                 <li><a href="/blog/">News &amp; Events</a></li>
-                <li><a href="/faqs">FAQ</a></li>
+                <li><a href="../pages/faq.html">FAQ</a></li>
               </ul>
             </div>
           </div>
@@ -137,6 +137,6 @@ function footer(){
       <div class="footer-bottom-2-aj">© 2020 All Rights Reserved.</div>
     </div>
     <!--footer-main-ajn-->
-  </footer>`
+  </footer>`;
 }
 export default footer;
