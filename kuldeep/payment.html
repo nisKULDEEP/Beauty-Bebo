@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        .selectmethod_at div:first-child{
+            display: flex;
+        }
+        .selectmethod_at{
+            border-bottom: 1px solid grey;
+            padding: 4%;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid green;
+        }
+
+        #checkoutcontainer_at{
+            width:80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            border: 2px solid blue;
+
+        }
+        #paymentmode_at{
+            width:50%;
+            border: 2px solid red;
+            /* padding-bottom:20px; */
+            height: 300px;
+        }
+        #paymentmode_at span{
+            width:90%;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            /* border: 2px solid red; */
+        }
+        #button_showdetail_at{
+            display: flex;
+            width: 90%;
+            /* flex-direction: row-reverse; */
+            align-items: center;
+        }
+        #button_showdetails_at{
+            padding: 1%;
+            width: 127px;
+            border: none;
+            background-color: rgb(66, 65, 65);
+            color: white;
+            font-size: 16px;
+        }
+        #button_showdetails_at:hover{
+            background-color: #dd0285;
+            color: white;
+        }
+        #h6_aftercod_at{
+            width: 100%;
+            font-size: 50px;
+            margin: 133px;
+        }
+
+        #summary{
+            border: 2px solid green;
+            margin-left: 100px;
+            width:38%
+        }
+       
+        #paymentspan_at{
+            background-color: blue;
+            margin: 20px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="checkoutcontainer_at">
+        <div id="paymentmode_at">
+            <span id="paymentspan_at">Payment Method</span>
+
+            
+            <div class="selectmethod_at" >
+                <div><input type="checkbox" value="Cash On Delivery" name="radio" id="cod_at" onclick="cashondelivery()" ><div>Cash on Delivery</div></div><div id="cod_div"></div> </div>
+
+            <div class="selectmethod_at">
+                <div><input type="checkbox" value="Cash On Delivery" name="radio" id="deb_at" onclick="" ><div>Cash on Delivery</div></div><div id="cod_dev"></div> </div>
+        </div>
+
+        <div id="summary">
+            <div id="Ordersummary">
+                <div id="ordersummaryheading"><h3>Order Summary</h3></div>
+                <div class="cartsubtotal">
+                    <span>Subtotal</span>
+                    <span id="paymentsubtotal_at">&#8377;</span>
+                </div>
+                <div class="cartsubtotal">
+                    <span>Shipping</span>
+                    <span>&#8377;0.00</span>
+                </div>
+                <div class="cartsubtotal">
+                    <span>GST</span>
+                    <span id="paymentgst_at">&#8377;</span>
+                </div>
+                <div class="cartsubtotal">
+                    <span>Order Total Incl. GST</span>
+                    <span id="paymentincl_at">&#8377;</span>
+                </div>
+                <div class="cartsubtotal">
+                    <span>Order Total Excl. GST</span>
+                    <span id="paymentexcl_at">&#8377;</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./payment.js"></script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/productDisplay.css">
+    <link rel="stylesheet" href="../styles/main.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Personal Care Products</title>
+</head>
+<body class="product_result_ks">
+    <div class="sidebar_ks">
+        <div class="category_ks">
+            CATEGORY
+        </div>
+        <div class="shop_by_ks">
+            <h3>SHOP BY</h3>
+            <div>SKIN TYPE</div>
+            <div>COLOR</div>
+            <div>PRICE</div>
+            <div>BRAND</div>
+            <div>SHADES</div>
+            <div>FORMULATION</div>
+        </div>
+
+        <div class="delivery_img">
+            <img src="https://www.beautybebo.com/pub/media/free-delivery.jpg" alt="">
+        </div>
+
+    </div>
+    
+    <div class="product_container_ks">
+
+    </div>
+
+    
+</body>
+
+<script type="module">
+    import {fetchData, display} from "../components/fetchData.js";
+    import product from "../components/product.js";
+ 
+    var product_container_ks = document.querySelector(".product_container_ks");
+    var url = "../db.json";
+    var data =await fetchData(url);
+    // console.log(data.products);
+    var finalData = data.products;
+
+    finalData.forEach(products => {
+            console.log(products);
+            if(products.category == "Personal Care"){
+                var productCard_ks = document.createElement("div");
+                productCard_ks.innerHTML = product(products.img,products.title,products.oldprice,products.newprice,products.discount);
+                productCard_ks.setAttribute("class", "product_card_ks")
+                product_container_ks.append(productCard_ks);
+            }
+    });
+
+ 
+    
+</script>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        #cartmaincontainer_at{
+            display: flex;
+            /* border: 2px solid red; */
+            justify-content: center;
+            flex-direction: row;
+        }
+        #showcartproducts_at{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+             /* border: 2px solid purple;  */
+        }
+        .showcartproductshead_at{
+            display: flex;
+            flex-direction: row;
+            border-bottom: 0.5px solid rgb(226, 220, 220); 
+            border-top: 0.5px solid rgb(226, 220, 220);
+            padding-top: 4%;
+        }
+        .itemdiv_at{
+            display: flex;
+            width: 55%;
+            flex-direction: row;
+        }
+        .pricequantitydiv_at{
+            width: 368px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        img{
+            width: 118px;
+            height: 127px;
+            margin-right: 10px;
+        }
+        #itemdivjs_at{
+            width: 427px;
+        }
+        #itemdivjs_at div{
+            display: flex;
+            align-items: center;
+            width: 200px;
+        }
+        .carttp_at{
+            display: flex; 
+             flex-direction:column;
+        }
+         span{
+            width:600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #cartdetails_at{
+            display: flex;
+            width: 25%;
+            border: 0.5px solid rgb(196, 190, 190);
+            margin-left: 20px;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            padding-left: 30px;
+        }
+        #cartdetails_at div{
+            width: 92%;
+            /* margin: 2%; */
+            /* border: 2px solid blue; */
+            padding: 12px 0px 12px 0px;
+
+        }
+        #cartdetails_at select{
+            padding: 8px;
+            margin:5px 0px 5px 0px;
+            width: 88%;
+        }
+        .spediv_at{
+            border: 1px solid rgb(190, 187, 187);
+            display: flex;
+            padding: 12px;
+            /* margin: 2%; */
+            margin-bottom: 5%;
+            width: 500px;
+            
+        }
+        #zipcode input{
+            padding: 9px;
+            width: 39px;
+            margin-left: 0px;
+        }
+        #zipcode label{
+            
+            margin-left: 3px;
+            /* margin: 4px; */
+        }
+
+        /* #c_buttons_at{
+            /* display: flex; */
+            /* border:2px solid yellow;
+        }  */
+        .cartbutton_at{
+            display: inline;
+            margin: 2%;
+            /* padding:10px; */
+            /* border-bottom: 1px solid rgb(190, 187, 187); */
+        }
+        .cartbutton_at Button{
+            padding: 7px;
+            width: 100px;
+            margin-bottom: 7%;
+            margin-top: 7%;
+            /* display: flex;
+            flex-direction:column; */
+            background-color: rgb(214, 21, 86);
+            border: none;
+            color: white;
+            border-radius: 2px;
+        }
+        .cartbutton_at Button:hover{
+            background-color: rgb(49, 47, 47);
+            border: none;
+            color: white;
+            border-radius: 2px;
+        }
+        #cartheadhead_at{
+            margin-top:0%;
+            padding:2%;
+        }
+        #item_item_at{
+            margin-left: 130px;
+        }
+        #spccart_at{
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        #estimate_at{
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .spediv_at span{
+            padding: 10px;
+        }
+
+        div h3{
+            font-size: 23px;
+            border-bottom: 0.5px solid grey;
+            width: 302px;
+            margin-top: 3%;
+        }
+        #carthead_at{
+            margin: 29px;
+            margin-left: 164px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2 id="carthead_at">SHOPPING</h2>
+    <div id="cartmaincontainer_at">
+        <div id="showcartproducts_at">
+            <div class="showcartproductshead_at" id="cartheadhead_at">
+                <div class="itemdiv_at" id="item_item_at"><b>Item</b></div>
+                    <div class="pricequantitydiv_at">
+                        <span><b>Price</b></span>
+                        <Span><b>Quantity</b></Span>
+                        <span><b>SubTotal</b></span>
+                    </div>
+                </div>    
+            </div>
+
+
+            <div id="cartdetails_at">
+               <div><h3>Summary</h3></div>
+               <!-- <hr> -->
+               <div id="estimate_at">Estimate Shipping And Tax</div>
+               <div id="selectcountry_at">
+                   <div><b>country</b></div>
+                   <select name="country" id="selet_at">
+                       <option value="India">India</option>
+                   </select>
+               </div>
+               <div id="selectstate">
+                <div id="spccart_at"><b>State</b></div>
+                <select name="state" id="cartstate_at" class="cartcommcont_at">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujrat">Gujrat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkand">Jharkand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerla">Kerla</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+               </div>
+
+               <div id="zipcode">
+                   <div><label for="zipcode"><b>Zip/Postal Code</b></label><div>
+                   <br>
+                   <input type="text">
+               </div>
+               <div>
+                   <div><b>BestWay</b></div>
+                   <input type="radio">
+                   <label for="bestway">Max 7 Business Days</label>
+               </div>
+
+               <div class="spediv_at">
+                   <span >Subtotal</span>
+                   <span id="spedivspan_at">rupee</span>
+               </div>
+
+               <div  class="spediv_at">
+                   <span>Shipping</span>
+                   <span>&#8377;0.00</span>
+               </div>
+
+               <div  class="spediv_at">
+                   <span >Order Total Incl. GST</span>
+                   <span id="gst_at">rupee</span>
+               </div>
+
+               <div  class="spediv_at">
+                   <form action="./checkout.html">
+                   <Button>Proceed To Checkout</Button>
+                    </form>
+               </div>
+            </div>
+
+        </div>
+    </div>
+        
+</body>
+<script src="./cart.js"></script>
+</html>
+
+
+
