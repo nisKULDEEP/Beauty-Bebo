@@ -47,7 +47,7 @@ function footer() {
             </div>
             <div class="footer-block-content">
               <ul class="links">
-                <li><a href="/about-us">About us</a></li>
+                <li><a href="../pages/aboutus.html">About us</a></li>
                 <li><a href="/contact">Contact Us</a></li>
                 <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
                 <li><a href="/privacy-policy">Privacy Policy</a></li>

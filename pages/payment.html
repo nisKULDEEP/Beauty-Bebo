@@ -1,380 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+
     <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-    rel="stylesheet"
-  />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/af387dc509.js" crossorigin="anonymous"></script>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/af387dc509.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Payment</title>
     <style>
-        .selectmethod_at div:first-child{
-            display: flex;
-        }
-        .selectmethod_at{
-            border-bottom: 1px solid grey;
-            padding: 4%;
-            font-size: 18px;
-            display: flex;
-            justify-content: space-between;
-            /* border: 2px solid green; */
-            margin: 6px;
-            margin-bottom: 100px;
-        }
+      .selectmethod_at div:first-child {
+        display: flex;
+      }
+      .selectmethod_at {
+        border-bottom: 1px solid grey;
+        padding: 4%;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid green; */
+        margin: 6px;
+        margin-bottom: 100px;
+      }
 
-        #checkoutcontainer_at{
-            width:80%;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            /* border: 2px solid blue; */
+      #checkoutcontainer_at {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid blue; */
+      }
+      #paymentmode_at {
+        width: 50%;
+        /* border: 2px solid red; */
+        /* padding-bottom:20px; */
+        /* height: 300px; */
+        padding: 100px;
+      }
+      #paymentmode_at span {
+        width: 90%;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        /* border: 2px solid red; */
+      }
+      #button_showdetail_at {
+        display: flex;
+        width: 90%;
+        /* flex-direction: row-reverse; */
+        align-items: center;
+      }
+      #button_showdetails_at {
+        padding: 1%;
+        width: 127px;
+        border: none;
+        background-color: rgb(66, 65, 65);
+        color: white;
+        font-size: 16px;
+      }
+      #button_showdetails_at:hover {
+        background-color: #dd0285;
+        color: white;
+      }
+      #h6_aftercod_at {
+        width: 100%;
+        font-size: 50px;
+        margin: 133px;
+      }
 
-        }
-        #paymentmode_at{
-            width:50%;
-            /* border: 2px solid red; */
-            /* padding-bottom:20px; */
-            /* height: 300px; */
-            padding: 100px;
-        }
-        #paymentmode_at span{
-            width:90%;
-            font-size: 25px;
-            font-weight: 600;
-            margin-bottom: 5px;
-            /* border: 2px solid red; */
-        }
-        #button_showdetail_at{
-            display: flex;
-            width: 90%;
-            /* flex-direction: row-reverse; */
-            align-items: center;
-        }
-        #button_showdetails_at{
-            padding: 1%;
-            width: 127px;
-            border: none;
-            background-color: rgb(66, 65, 65);
-            color: white;
-            font-size: 16px;
-        }
-        #button_showdetails_at:hover{
-            background-color: #dd0285;
-            color: white;
-        }
-        #h6_aftercod_at{
-            width: 100%;
-            font-size: 50px;
-            margin: 133px;
-        }
+      #summary {
+        /* border: 2px solid green; */
+        margin-left: 100px;
+        width: 38%;
+      }
+      #Ordersummary {
+        /* justify-items: center; */
+        text-align: center;
+        margin-top: 100px;
+        line-height: 1.8;
+      }
 
-        #summary{
-            /* border: 2px solid green; */
-            margin-left: 100px;
-            width:38%;
-        
-        }
-        #Ordersummary{
-            /* justify-items: center; */
-            text-align: center;
-            margin-top: 100px;
-            line-height: 1.8;
-        }
-       
-        #paymentspan_at{
-            /* background-color: blue; */
-            margin: 20px;
-            /* padding: 30px; */
-            margin-bottom: 50px;
-            width:474px;
-        }
+      #paymentspan_at {
+        /* background-color: blue; */
+        margin: 20px;
+        /* padding: 30px; */
+        margin-bottom: 50px;
+        width: 474px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="to-top">
-        <i class="fas fa-angle-double-up"></i>
-      </div>
+      <i class="fas fa-angle-double-up"></i>
+    </div>
     <div class="header_anmol_ks"></div>
     <div id="checkoutcontainer_at">
-        <div id="paymentmode_at">
-            <div id="paymentspan_at"><h3>Payment Method</h3></div>
+      <div id="paymentmode_at">
+        <div id="paymentspan_at"><h3>Payment Method</h3></div>
 
-            
-            <div class="selectmethod_at" >
-                <div><input type="checkbox" value="Cash On Delivery" name="radio" id="cod_at" onclick="cashondelivery()" ><div>Cash on Delivery</div></div><div id="cod_div"></div> </div>
-
-            <div class="selectmethod_at">
-                <div><input type="checkbox" value="Cash On Delivery" name="radio" id="deb_at" onclick="cashondelivery()" ><div>Debit/Credit Card</div></div><div id="cod_dev"></div> </div>
+        <div class="selectmethod_at">
+          <div>
+            <input
+              type="checkbox"
+              value="Cash On Delivery"
+              name="radio"
+              id="cod_at"
+              onclick="cashondelivery()"
+            />
+            <div>Cash on Delivery</div>
+          </div>
+          <div id="cod_div"></div>
         </div>
 
-        <div id="summary">
-            <div id="Ordersummary">
-                <div id="ordersummaryheading"><h3>Order Summary</h3></div>
-                <div class="cartsubtotal">
-                    <span>Subtotal</span>
-                    <span id="paymentsubtotal_at">&#8377;</span>
-                </div>
-                <div class="cartsubtotal">
-                    <span>Shipping</span>
-                    <span>&#8377;0.00</span>
-                </div>
-                <div class="cartsubtotal">
-                    <span>GST</span>
-                    <span id="paymentgst_at">&#8377;</span>
-                </div>
-                <div class="cartsubtotal">
-                    <span>Order Total Incl. GST</span>
-                    <span id="paymentincl_at">&#8377;</span>
-                </div>
-                <div class="cartsubtotal">
-                    <span>Order Total Excl. GST</span>
-                    <span id="paymentexcl_at">&#8377;</span>
-                </div>
-
-            </div>
+        <div class="selectmethod_at">
+          <div>
+            <input
+              type="checkbox"
+              value="Cash On Delivery"
+              name="radio"
+              id="deb_at"
+              onclick="cashondelivery()"
+            />
+            <div>Debit/Credit Card</div>
+          </div>
+          <div id="cod_dev"></div>
         </div>
-    </div>
-    <div class="footer_anmol_ks">
+      </div>
 
+      <div id="summary">
+        <div id="Ordersummary">
+          <div id="ordersummaryheading"><h3>Order Summary</h3></div>
+          <div class="cartsubtotal">
+            <span>Subtotal</span>
+            <span id="paymentsubtotal_at">&#8377;</span>
+          </div>
+          <div class="cartsubtotal">
+            <span>Shipping</span>
+            <span>&#8377;0.00</span>
+          </div>
+          <div class="cartsubtotal">
+            <span>GST</span>
+            <span id="paymentgst_at">&#8377;</span>
+          </div>
+          <div class="cartsubtotal">
+            <span>Order Total Incl. GST</span>
+            <span id="paymentincl_at">&#8377;</span>
+          </div>
+          <div class="cartsubtotal">
+            <span>Order Total Excl. GST</span>
+            <span id="paymentexcl_at">&#8377;</span>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-<script type="module">
+    <div class="footer_anmol_ks"></div>
+  </body>
+  <script type="module">
     import footer from "../components/footer.js";
-import header from "../components/header.js";
+    import header from "../components/header.js";
 
-var header_anmol_ks =  document.querySelector(".header_anmol_ks");
-header_anmol_ks.innerHTML = header();
+    var header_anmol_ks = document.querySelector(".header_anmol_ks");
+    header_anmol_ks.innerHTML = header();
 
-var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
-footer_anmol_ks.innerHTML = footer();
+    var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
+    footer_anmol_ks.innerHTML = footer();
 
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (cart == null) {
+      localStorage.setItem("cart", JSON.stringify([]));
+    }
 
-let cart = JSON.parse(localStorage.getItem("cart"));
-if(cart==null){
-    localStorage.setItem("cart",JSON.stringify([]));
-}
+    let subtotal = document.getElementById("paymentsubtotal_at");
+    // subtotal.innerHTML="";
+    let gst = document.getElementById("paymentgst_at");
+    // gst.innerHTML="";
+    let incl = document.getElementById("paymentincl_at");
+    // incl.innerHTML="";
+    // let excl = document.getElementById("paymentexcl_at");
+    // excl.innerHTML="";
 
+    console.log(subtotal, gst, incl);
 
+    console.log(cart);
+    var k = 0;
+    cart.forEach(function (user) {
+      console.log(user.price);
+      console.log(user.quantity);
+      k += user.price * user.quantity;
+      console.log(user.price, user.quantity);
+    });
 
+    console.log(k);
 
-let subtotal = document.getElementById("paymentsubtotal_at");
-// subtotal.innerHTML="";
-let gst = document.getElementById("paymentgst_at");
-// gst.innerHTML="";
-let incl = document.getElementById("paymentincl_at");
-// incl.innerHTML="";
-// let excl = document.getElementById("paymentexcl_at");
-// excl.innerHTML="";
+    subtotal.innerHTML = `&#8377;${k.toFixed(2)}`;
+    gst.innerHTML = `&#8377;${(k * 0.18).toFixed(2)}`;
+    incl.innerHTML = `&#8377;${(k * 1.18).toFixed(2)}`;
+    // excl.innerHTML= `&#8377;${k}`;
 
-console.log(subtotal,gst,incl);
+    // const radiobtns=document.getElementsByName("radio");
+    // console.log(radiobtns);
 
+    // function radiooo(){
+    //     let mode = document.getElementById("cod_div");
+    //     console.log(mode);
 
-console.log(cart);
-var k=0;
-cart.forEach(function(user){
-    console.log(user.price );
-    console.log(user.quantity );
-    k += (user.price)*(user.quantity);
-    console.log(user.price, user.quantity);
-});
+    //     for(var i=0;i<radiobtns.length;i++){
+    //         if(radiobtns[i].checked){
+    //             console.log("123");
+    //         }
 
-console.log(k);
+    //     }
 
-subtotal.innerHTML=`&#8377;${(k).toFixed(2)}`;
-gst.innerHTML=`&#8377;${((k*0.18).toFixed(2))}`;
-incl.innerHTML= `&#8377;${(k*1.18).toFixed(2)}`;
-// excl.innerHTML= `&#8377;${k}`;
+    //     // let button = document.createElement("div");
+    //     // // button.onclick=showdetails();
+    //     // button.innerHTML=`<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>`;
+    //     // if(i==1){
+    //     // mode.append(button);
+    //     // i++;
+    //     // }
+    //     // else{
+    //     //     button.innerHTML="";
+    //     //     i=0;
+    //     // }
 
-// const radiobtns=document.getElementsByName("radio");
-// console.log(radiobtns);
+    // }
 
-// function radiooo(){
-//     let mode = document.getElementById("cod_div");
-//     console.log(mode);
-
-//     for(var i=0;i<radiobtns.length;i++){
-//         if(radiobtns[i].checked){
-//             console.log("123");
-//         }
-
-//     }
-
-//     // let button = document.createElement("div");
-//     // // button.onclick=showdetails();
-//     // button.innerHTML=`<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>`;
-//     // if(i==1){
-//     // mode.append(button);
-//     // i++;
-//     // }
-//     // else{
-//     //     button.innerHTML="";
-//     //     i=0;
-//     // }
-
-    
-// }
-
-let mode = document.getElementById("cod_div");
-let mode2 = document.getElementById("cod_dev");
+    let mode = document.getElementById("cod_div");
+    let mode2 = document.getElementById("cod_dev");
     // console.log(mode);
-const radiobtns = document.getElementsByName("radio");
-console.log(radiobtns);
-// radiobtns.forEach((el) => {
-//   el.addEventListener('click',()=>{
-//       if(el.checked){
-//           mode.innerHTML ='<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>'; /*button code */
-//       }else{
-//           mode.innerHTML = "";
-//       }
-      
-//   });
-// });
+    const radiobtns = document.getElementsByName("radio");
+    console.log(radiobtns);
+    // radiobtns.forEach((el) => {
+    //   el.addEventListener('click',()=>{
+    //       if(el.checked){
+    //           mode.innerHTML ='<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>'; /*button code */
+    //       }else{
+    //           mode.innerHTML = "";
+    //       }
 
-let cod  = document.getElementById("cod_at");
-let deb  = document.getElementById("deb_at");
+    //   });
+    // });
 
-radiobtns[0].addEventListener("click",()=>
-{
-    if(radiobtns[0].checked){
-        mode.innerHTML ='<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>';
-        mode2.innerHTML="";
-        deb.checked=false;
-    }
-    else{
-        mode.innerHTML="";
+    let cod = document.getElementById("cod_at");
+    let deb = document.getElementById("deb_at");
+
+    radiobtns[0].addEventListener("click", () => {
+      if (radiobtns[0].checked) {
+        mode.innerHTML =
+          '<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>';
+        mode2.innerHTML = "";
+        deb.checked = false;
+      } else {
+        mode.innerHTML = "";
         // mode.checked=false;
+      }
+    });
+
+    radiobtns[1].addEventListener("click", () => {
+      if (radiobtns[1].checked) {
+        mode2.innerHTML =
+          '<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>';
+        mode.innerHTML = "";
+        cod.checked = false;
+      } else {
+        mode2.innerHTML = "";
+      }
+    });
+
+    console.log(mode2.checked);
+
+    // =========================================
+    cart = JSON.parse(localStorage.getItem("cart"));
+
+    let price_in_cart = document.querySelector(".price-in-cart");
+    console.log(price_in_cart);
+
+    function total_cart_sum_fx() {
+      total_cart_sum = 0;
+      cart = JSON.parse(localStorage.getItem("cart"));
+
+      cart.forEach((element) => {
+        //  console.log(element.price)
+        total_cart_sum += Number(element.price);
+        // console.log(total_cart_sum);
+      });
+
+      price_in_cart.innerHTML = "₹" + " " + total_cart_sum;
     }
-});
 
-radiobtns[1].addEventListener("click",()=>
-{
-    if(radiobtns[1].checked){
-        mode2.innerHTML ='<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>';
-        mode.innerHTML="";
-        cod.checked=false;
-    }
-    else{
-        mode2.innerHTML="";
+    total_cart_sum_fx();
+    const buttontobuy = document.querySelectorAll("#buttontobuy");
+    buttontobuy.forEach((btn) => {
+      btn.addEventListener("click", total_cart_sum_fx);
+    });
 
-    }
-});
+    // LOGIN SIGNUP POPUP
+    let login_signup_container = document.querySelector(
+      ".login_signup_container"
+    );
+    login_signup_container.addEventListener("mouseover", function () {
+      this.classList.toggle("active");
+    });
 
-console.log(mode2.checked);
-
-// =========================================
- cart = JSON.parse(localStorage.getItem("cart"));
-
-
-let price_in_cart = document.querySelector(".price-in-cart");
-  console.log(price_in_cart)
-  
-  function total_cart_sum_fx(){
-    total_cart_sum = 0;
-   cart = JSON.parse(localStorage.getItem("cart"));
-  
-   cart.forEach(element => {
-    //  console.log(element.price)
-    total_cart_sum += Number(element.price);
-    // console.log(total_cart_sum);
-   });
-  
-   price_in_cart.innerHTML = "₹"+ " "+ total_cart_sum;
-  }
-  
-  total_cart_sum_fx()
- const  buttontobuy = document.querySelectorAll("#buttontobuy");
- buttontobuy.forEach((btn) => {
-  btn.addEventListener("click", total_cart_sum_fx)
- })
-
-   // LOGIN SIGNUP POPUP
-   let login_signup_container = document.querySelector(".login_signup_container");
- login_signup_container.addEventListener("mouseover", function() {
-  this.classList.toggle("active");
- })
-
- login_signup_container.addEventListener("mouseout", function () {
+    login_signup_container.addEventListener("mouseout", function () {
       this.classList.remove("active");
     });
 
-    // LOGIN SIGNUP POPUP ENDS 
+    // LOGIN SIGNUP POPUP ENDS
+  </script>
 
-</script>
+  <script>
+    var total_cart_sum = 0;
 
-<script>
-  var total_cart_sum = 0;
-  
-    function addtocart(img,name,oldprice,price,discount){
-  // console.log("addtocart")
-  var temp = {
-      "img":img,
-      "name":name,
-      "oldprice":oldprice,
-      "price":price,
-      "discount":discount
-  };
-  
-  // total += price;
-  let cart = JSON.parse(localStorage.getItem("cart"));
-  
-  cart.push(temp);
-  localStorage.setItem("cart",JSON.stringify(cart));
-  
-  
-  }
+    function addtocart(img, name, oldprice, price, discount) {
+      // console.log("addtocart")
+      var temp = {
+        img: img,
+        name: name,
+        oldprice: oldprice,
+        price: price,
+        discount: discount,
+      };
 
-  
-let i = 1;
-function cashondelivery(){
-    
-    let mode = document.getElementById("cod_div");
-    console.log(mode);
+      // total += price;
+      let cart = JSON.parse(localStorage.getItem("cart"));
 
-    let button = document.createElement("div");
-    // button.onclick=showdetails();
-    button.innerHTML=`<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>`;
-    if(i==1){
-    mode.append(button);
-    i++;
+      cart.push(temp);
+      localStorage.setItem("cart", JSON.stringify(cart));
     }
-    else{
-        button.innerHTML="";
-        i=0;
+
+    let i = 1;
+    function cashondelivery() {
+      let mode = document.getElementById("cod_div");
+      console.log(mode);
+
+      let button = document.createElement("div");
+      // button.onclick=showdetails();
+      button.innerHTML = `<div id="button_showdetail_at"><button onclick="showdetails()" id="button_showdetails_at">Place Order</button></div>`;
+      if (i == 1) {
+        mode.append(button);
+        i++;
+      } else {
+        button.innerHTML = "";
+        i = 0;
+      }
     }
-    
-}
 
+    function showdetails() {
+      var prompty = prompt("Confirm your order by typing 'y/n'");
+      if (prompty.toLowerCase() == "y") {
+        localStorage.removeItem("cart");
+        localStorage.setItem("cart", JSON.stringify([]));
+        let price_in_cart = document.querySelector(".price-in-cart");
+        price_in_cart.innerHTML = "₹" + " " + "00.00";
 
+        alert("Congratulations your order is placed!😍 ");
+        location.href = "../index.html";
+      } else {
+      }
 
-  function showdetails(){
-    
-
-    var prompty = prompt("Confirm your order by typing 'y/n'");
-    if(prompty.toLowerCase() == 'y'){
-        var data_ks = localStorage.clear();
-    let price_in_cart = document.querySelector(".price-in-cart");
-    price_in_cart.innerHTML = "₹"+ " "+ "00.00";
-
-    alert("Congratulations your order is placed!😍 ")    
-    location.href = "../index.html";
-    }else{
-
+      // let change = document.getElementById("checkoutcontainer_at");
+      // change.innerHTML="";
+      // change.innerHTML=`<h6 id="h6_aftercod_at";>Hello  You're Order Has Been Placed Succefully!!! Thanks For Shopping With Us<h6>`;
     }
-    
-    
-    // let change = document.getElementById("checkoutcontainer_at");
-    // change.innerHTML="";
-    // change.innerHTML=`<h6 id="h6_aftercod_at";>Hello  You're Order Has Been Placed Succefully!!! Thanks For Shopping With Us<h6>`;
-
-}
-
-  
   </script>
 </html>
