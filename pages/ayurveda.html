@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/productDisplay.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/af387dc509.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ayurveda Products</title>
+  </head>
+  <body>
+    <div class="to-top">
+      <i class="fas fa-angle-double-up"></i>
+    </div>
+    <div class="header_anmol_ks"></div>
+
+    <div class="product_result_ks">
+      <div class="sidebar_ks">
+        <div class="category_ks">CATEGORY</div>
+        <div class="shop_by_ks">
+          <h3>SHOP BY</h3>
+          <div class="zoom">SKIN TYPE</div>
+          <div class="zoom">COLOR</div>
+          <div class="zoom">PRICE</div>
+          <div class="zoom">BRAND</div>
+          <div class="zoom">SHADES</div>
+          <div class="zoom">FORMULATION</div>
+        </div>
+
+        <div class="delivery_img">
+          <img
+            src="https://www.beautybebo.com/pub/media/free-delivery.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="product_container_ks"></div>
+    </div>
+
+    <div class="footer_anmol_ks"></div>
+  </body>
+
+  <script type="module">
+    import { fetchData, display } from "../components/fetchData.js";
+    import product from "../components/product.js";
+    import footer from "../components/footer.js";
+    import header from "../components/header.js";
+
+    var header_anmol_ks =await document.querySelector(".header_anmol_ks");
+    header_anmol_ks.innerHTML = header();
+
+    var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
+    footer_anmol_ks.innerHTML = footer();
+
+    var product_container_ks = document.querySelector(".product_container_ks");
+    var url = "../db.json";
+    var data = await fetchData(url);
+    // console.log(data.products);
+    var finalData = data.products;
+
+    for (var i = 1; i < 4; i++) {
+      finalData.forEach((products) => {
+        // console.log(products);
+        if (products.category == "Ayurveda") {
+          const productCard = product(
+            products.img,
+            products.title,
+            products.oldprice,
+            products.newprice,
+            products.discount
+          );
+
+          product_container_ks.insertAdjacentHTML("afterbegin", productCard);
+        }
+      });
+    }
+
+    for (let j = 0; j < finalData.length; j++) {
+      if (finalData[j].category == "Ayurveda") {
+        const productCard = product(
+          finalData[j].img,
+          finalData[j].title,
+          finalData[j].oldprice,
+          finalData[j].newprice,
+          finalData[j].discount
+        );
+
+        product_container_ks.insertAdjacentHTML("afterbegin", productCard);
+        break;
+      }
+    }
+    let makeup_ks_anmol = document.querySelectorAll(".makeup_ks_anmol");
+    // let popup_header_ks = document.querySelectorAll(".popup_header_ks");
+
+    for (var i = 0; i < makeup_ks_anmol.length; i++) {
+      makeup_ks_anmol[i].addEventListener("mouseover", function () {
+        this.classList.toggle("active");
+      });
+
+      makeup_ks_anmol[i].addEventListener("mouseout", function () {
+        this.classList.remove("active");
+      });
+    }
+
+    const rotational = document.querySelector(".icon-create");
+
+    rotational.addEventListener("click", toggleMobileMenu);
+
+    function toggleMobileMenu() {
+      rotational.classList.toggle("open-navbar");
+    }
+
+    const mybuttonTop = document.querySelector(".to-top");
+    window.onscroll = function () {
+      scrollTopFunction();
+    };
+    window.onresize = function () {
+      if (window.innerWidth > 940) {
+        rotational.classList.remove("open-navbar");
+      }
+    };
+    function scrollTopFunction() {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        mybuttonTop.style.display = "inline-block";
+      } else {
+        mybuttonTop.style.display = "none";
+      }
+    }
+    const navTop = document.querySelector(".nav-top");
+    mybuttonTop.addEventListener("click", moveTop);
+    function moveTop() {
+      navTop.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    if( JSON.parse(localStorage.getItem("cart")) == null){
+  localStorage.setItem("cart",JSON.stringify([]));
+}
+
+
+// =========================================
+let cart = JSON.parse(localStorage.getItem("cart"));
+let price_in_cart = document.querySelector(".price-in-cart");
+  console.log(price_in_cart)
+  
+  function total_cart_sum_fx(){
+    total_cart_sum = 0;
+   cart = JSON.parse(localStorage.getItem("cart"));
+  
+   cart.forEach(element => {
+    //  console.log(element.price)
+    total_cart_sum += Number(element.price);
+    // console.log(total_cart_sum);
+   });
+  
+   price_in_cart.innerHTML = "₹"+ " "+ total_cart_sum;
+  }
+  
+  total_cart_sum_fx()
+ const  buttontobuy = document.querySelectorAll("#buttontobuy");
+ buttontobuy.forEach((btn) => {
+  btn.addEventListener("click", total_cart_sum_fx)
+ })
+
+//  console.log(buttontobuy);
+
+   // LOGIN SIGNUP POPUP
+   let login_signup_container = document.querySelector(".login_signup_container");
+ login_signup_container.addEventListener("mouseover", function() {
+  this.classList.toggle("active");
+ })
+
+ login_signup_container.addEventListener("mouseout", function () {
+      this.classList.remove("active");
+    });
+
+    // LOGIN SIGNUP POPUP ENDS 
+
+</script>
+
+<script>
+  var total_cart_sum = 0;
+  
+    function addtocart(img,name,oldprice,price,discount){
+  // console.log("addtocart")
+  var temp = {
+      "img":img,
+      "name":name,
+      "oldprice":oldprice,
+      "price":price,
+      "discount":discount
+  };
+  
+  // total += price;
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  
+  cart.push(temp);
+  localStorage.setItem("cart",JSON.stringify(cart));
+  
+  
+  }
+
+
+  
+  </script>
+</html>

@@ -1,0 +1,504 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/i/m/image1_600x.jpg",
+      "title": "Lotus Herbals Whiteglow Vitamin",
+      "oldprice": "475.00",
+      "newprice": "428.00",
+      "ratings": "5",
+      "category": "skin",
+      "discount": "10"
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/3/e/3eb5e308904311902874_1.jpg",
+      "title": "Wow Skin Science Raw African Shea Body Butter",
+      "oldprice": "499.00",
+      "newprice": "440.00",
+      "ratings": "5",
+      "category": "skin",
+      "discount": "12",
+      "id": 2
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/a/9a262018906087777229__7_.jpg",
+      "title": "Mamaearth Vitamin C Nourishing Cold Cream For Face & Body With Vitamin C & Honey",
+      "oldprice": "299.00",
+      "newprice": "299.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "none",
+      "id": 3
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be3a2018906087777212__7_.jpg",
+      "title": "Mamaearth Ubtan Nourishing Cold Cream For Winter With Turmeric & Saffron For Glowing Moisturization",
+      "oldprice": "299.00",
+      "newprice": "299.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "none",
+      "id": 4
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/1/21_12_3.jpg",
+      "title": "Vaadi Herbals Chocolate & Strawberry Massage Gel - Pack Of 2",
+      "oldprice": "570.00",
+      "newprice": "570.00",
+      "ratings": "4",
+      "category": "face",
+      "discount": "none",
+      "id": 5
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/1/21_12_3.jpg",
+      "title": "Ponds Super Light Gel Oil Free Moisturiser With Hyaluronic Acid + Vitamin E - Pack Of 2",
+      "oldprice": "598.00",
+      "newprice": "538.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "10",
+      "id": 6
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/v/a/va32.jpg",
+      "title": "Vaadi Herbals 24 Carat Gold Massage Cream",
+      "oldprice": "295.00",
+      "newprice": "295.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "none",
+      "id": 7
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/5/o50.jpg",
+      "title": "O3+ Dermal Zone White Day Cream SPF 15",
+      "oldprice": "955.00",
+      "newprice": "898.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "6",
+      "id": 8
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/4/o43.jpg",
+      "title": "O3+ Cranberry D-Tan",
+      "oldprice": "1550.00",
+      "newprice": "1473.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "5",
+      "id": 9
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/8/288.jpg",
+      "title": "Himalaya Herbals Oil-Free Radiance Gel Cream",
+      "oldprice": "260.00",
+      "newprice": "260.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "none",
+      "id": 10
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/l/9/l9.jpg",
+      "title": "Lotus Professional Phyto-Rx Anti-Blemish Cream",
+      "oldprice": "695.00",
+      "newprice": "640.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "8",
+      "id": 11
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/2/b20.jpg",
+      "title": "Bioderma Sensibio Forte Cream",
+      "oldprice": "1392.00",
+      "newprice": "1281.00",
+      "ratings": "5",
+      "category": "skin",
+      "discount": "8",
+      "id": 12
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/l/o/lo18.jpg",
+      "title": "Joy Intense Moisture Skin Cream",
+      "oldprice": "160.00",
+      "newprice": "160.00",
+      "ratings": "5",
+      "category": "skin",
+      "discount": "none",
+      "id": 13
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/l/ol37.jpg",
+      "title": "Olay Total Effects 7 In One Day Cream Normal SPF 15",
+      "oldprice": "899.00",
+      "newprice": "827.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "8",
+      "id": 14
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be52.jpg",
+      "title": "Beeone Almond Massage Cream",
+      "oldprice": "285.00",
+      "newprice": "285.00",
+      "ratings": "5",
+      "category": "massage",
+      "discount": "none",
+      "id": 15
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be42.jpg",
+      "title": "Beeone Cold Cream 900ml",
+      "oldprice": "300.00",
+      "newprice": "240.00",
+      "ratings": "5",
+      "category": "massage",
+      "discount": "20",
+      "id": 16
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/a/r/arom5.jpg",
+      "title": "Aroma Magic Passion Flower Massage Cream",
+      "oldprice": "295.00",
+      "newprice": "280.00",
+      "ratings": "5",
+      "category": "massage",
+      "discount": "5",
+      "id": 17
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be41.jpg",
+      "title": "Beeone Cold Cream",
+      "oldprice": "220.00",
+      "newprice": "171.00",
+      "ratings": "5",
+      "category": "body",
+      "discount": "22",
+      "id": 18
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/l/ol20.jpg",
+      "title": "Olay Regenerist Summer Power Duo With SPF 30 For Hydration (Moisturizer + Essence)",
+      "oldprice": "3298.00",
+      "newprice": "2968.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "10",
+      "id": 19
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/l/o/lo18.jpg",
+      "title": "Lotus Make-Up Ecostay Super Finish Mousse SPF 20",
+      "oldprice": "745.00",
+      "newprice": "670.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "10",
+      "id": 20
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/l/o/lo7.jpg",
+      "title": "Lotus Herbals Naturalglow Daily Tinted Moisturiser SPF 25 - Bright Angle",
+      "oldprice": "475.00",
+      "newprice": "403.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "15",
+      "id": 21
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/d/sdasdasdasdasdsa.jpg",
+      "title": "NIVEA Cocoa Butter Body Cream",
+      "oldprice": "275.00",
+      "newprice": "220.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "20",
+      "id": 22
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/z/x/zxaxsa.jpg",
+      "title": "Mamaearth CoCo Body Lotion With Coffee And Cocoa For Intense Moisturization",
+      "oldprice": "399.00",
+      "newprice": "335.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "16",
+      "id": 23
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/7/87iyujyuhj.jpg",
+      "title": "Joy Skin Fruits Fast Absorbing Light Moisturiser Cream",
+      "oldprice": "170.00",
+      "newprice": "170.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "none",
+      "id": 24
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/b/bbj0001918-2.jpg",
+      "title": "Lakme Sun Expert Spf 50 Pa+++ Ultra Matte Gel Sunscreen",
+      "oldprice": "325.00",
+      "newprice": "293.00",
+      "ratings": "5",
+      "category": "face",
+      "discount": "10",
+      "id": 25
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/8/9/8904311902027_1.jpg",
+      "title": "WOW Skin Science Hair Mask For Dry And Damaged Hair",
+      "oldprice": "549.00",
+      "newprice": "489.00",
+      "ratings": "0",
+      "category": "hair",
+      "discount": "11",
+      "id": 26
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/4/0/4045787429534.jpg",
+      "title": "Schwarzkopf Professional Bonacure Masque Treatment",
+      "oldprice": "1000.00",
+      "newprice": "950.00",
+      "ratings": "2",
+      "category": "hair",
+      "discount": "5",
+      "id": 27
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/o/n/onion-beard-oil_1.jpg",
+      "title": "Mamaearth Onion Beard Oil For Beard Growth",
+      "oldprice": "499.00",
+      "newprice": "449.00",
+      "ratings": "2",
+      "category": "hair",
+      "discount": "10",
+      "id": 28
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/7/a/7af639c8904311904274__1_.jpg",
+      "title": "WOW Skin Science Himalayan Rose Shampoo",
+      "oldprice": "449.00",
+      "newprice": "395.00",
+      "ratings": "2",
+      "category": "hair",
+      "discount": "12",
+      "id": 29
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/9/a/9a21c478906105615175-2.jpg",
+      "title": "WOW Skin Science Rice Hair Mask With Rice Water",
+      "oldprice": "499.00",
+      "newprice": "449.00",
+      "ratings": "2",
+      "category": "hair",
+      "discount": "10",
+      "id": 30
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/n/y/nywowbndl0064.jpg",
+      "title": "Wow Onion Hair Care Combo",
+      "oldprice": "1597.00",
+      "newprice": "1437.00",
+      "ratings": "2",
+      "category": "hair",
+      "discount": "10",
+      "id": 31
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/l/o/lot1.jpg",
+      "title": "Lotus Herbals Baby + Eternal Love Baby Massage Oil",
+      "oldprice": "395.00",
+      "newprice": "348.00",
+      "ratings": "5",
+      "category": "Mom & Baby Care",
+      "discount": "12",
+      "id": 32
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/v/a/va126.jpg",
+      "title": "Mamaearth Milky Soft Body Lotion ",
+      "oldprice": "399.00",
+      "newprice": "347.00",
+      "ratings": "5",
+      "category": "Mom & Baby Care",
+      "discount": "13",
+      "id": 33
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/2/3/23_11_3.jpg",
+      "title": "Mamaearth Super Strawberry Body Lotion",
+      "oldprice": "399.00",
+      "newprice": "351.00",
+      "ratings": "3",
+      "category": "Mom & Baby Care",
+      "discount": "12",
+      "id": 34
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/3/1/31_7_4.jpg",
+      "title": "Mamaearth Agent Apple Body Lotion",
+      "oldprice": "399.00",
+      "newprice": "351.00",
+      "ratings": "0",
+      "category": "Mom & Baby Care",
+      "discount": "12",
+      "id": 35
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/3/5/35_3.jpg",
+      "title": "Mamaearth Awesome Orange Toothpaste For Kids",
+      "oldprice": "299.00",
+      "newprice": "299.00",
+      "ratings": "3",
+      "category": "Mom & Baby Care",
+      "discount": "0",
+      "id": 36
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/j/6/j6.jpg",
+      "title": "Joy Hydra Refresh Ultra Light Gel Moisturiser",
+      "oldprice": "170.00",
+      "newprice": "170.00",
+      "ratings": "3",
+      "category": "Ayurveda",
+      "discount": "0",
+      "id": 37
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/b/e/be69.jpg",
+      "title": "Beeone Gold Facial Gel",
+      "oldprice": "290.00",
+      "newprice": "230.00",
+      "ratings": "3",
+      "category": "Ayurveda",
+      "discount": "21",
+      "id": 38
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/b/3/b3.jpg",
+      "title": "Beeone Gold Facial Gel",
+      "oldprice": "375.00",
+      "newprice": "338.00",
+      "ratings": "3",
+      "category": "Ayurveda",
+      "discount": "10",
+      "id": 39
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/s/1/s1_1.jpg",
+      "title": "Shahnaz Husain Gold 2-In-1 Anti Ageing Gel",
+      "oldprice": "1825.00",
+      "newprice": "1734.00",
+      "ratings": "3",
+      "category": "Ayurveda",
+      "discount": "5",
+      "id": 40
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/s/_/s_1.jpg",
+      "title": "Plum Green Tea Renewed Clarity Night Gel",
+      "oldprice": "575.00",
+      "newprice": "512.00",
+      "ratings": "3",
+      "category": "Ayurveda",
+      "discount": "11",
+      "id": 41
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/o/i/oily_sunscreen_spf_50-2.png",
+      "title": "Ponds Sun Protect Non-Oily Sunscreen SPF 50",
+      "oldprice": "329.00",
+      "newprice": "295.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "10",
+      "id": 42
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/e/e/eeeee_1.jpg",
+      "title": "Organic Harvest Rosemary Essential Oil",
+      "oldprice": "400.00",
+      "newprice": "360.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "10",
+      "id": 43
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/s/h/shower_gel.jpg",
+      "title": "Vaadi Herbals Luxurious Saffron Shower Gel",
+      "oldprice": "245.00",
+      "newprice": "245.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "0",
+      "id": 44
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/p/2/p2_1.jpg",
+      "title": "Pears Naturale Brightening Pomegranate Bodywash",
+      "oldprice": "197.00",
+      "newprice": "197.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "0",
+      "id": 45
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/b/e/be154.jpg",
+      "title": "Beeone Milk Sensitive Milky Wax",
+      "oldprice": "310.00",
+      "newprice": "279.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "10",
+      "id": 46
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/b/e/be157.jpg",
+      "title": "Beeone Strawberry Milky Wax",
+      "oldprice": "310.00",
+      "newprice": "279.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "10",
+      "id": 47
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/b/e/be161.jpg",
+      "title": "Beeone Green Apple Milky Wax",
+      "oldprice": "310.00",
+      "newprice": "248.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "20",
+      "id": 48
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/v/a/va109.jpg",
+      "title": "Mamaearth Vitamin C Nourishing Bathing Soap With Vitamin C",
+      "oldprice": "299.00",
+      "newprice": "299.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "0",
+      "id": 49
+    },
+    {
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/6/8/680c9508904311903031__1_.jpg",
+      "title": "WOW Skin Science Thai Body Massage Oil",
+      "oldprice": "599.00",
+      "newprice": "549.00",
+      "ratings": "3",
+      "category": "Personal Care",
+      "discount": "10",
+      "id": 50
+    }
+  ]
+}
