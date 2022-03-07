@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/main.css"> -->
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/af387dc509.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+    <style>
+        #cartmaincontainer_at {
+            display: flex;
+            /* border: 2px solid red; */
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        #showcartproducts_at {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            /* gap: 10px; */
+            /* border: 2px solid purple;  */
+        }
+
+        .showcartproductshead_at {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 0.5px solid rgb(226, 220, 220);
+            border-top: 0.5px solid rgb(226, 220, 220);
+            padding-top: 4%;
+            gap: 90px;
+        }
+
+        .itemdiv_at {
+            display: flex;
+            width: 55%;
+            flex-direction: row;
+        }
+
+        .pricequantitydiv_at {
+            width: 368px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .cart_atharva img {
+            width: 118px;
+            height: 127px;
+            margin-right: 10px;
+        }
+
+        #itemdivjs_at {
+            /* width: 427px; */
+        }
+
+        #itemdivjs_at div {
+            display: flex;
+            align-items: center;
+            width: 200px;
+        }
+
+        .carttp_at {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart_atharva span {
+            /* width:600px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #cartdetails_at {
+            display: flex;
+            width: 25%;
+            border: 0.5px solid rgb(196, 190, 190);
+            margin-left: 20px;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            padding-left: 30px;
+        }
+
+        #cartdetails_at div {
+            width: 92%;
+            /* margin: 2%; */
+            /* border: 2px solid blue; */
+            padding: 12px 0px 12px 0px;
+
+        }
+
+        #cartdetails_at select {
+            padding: 8px;
+            margin: 5px 0px 5px 0px;
+            width: 88%;
+        }
+
+        .spediv_at {
+            /* border: 1px solid rgb(190, 187, 187); */
+            display: flex;
+            padding: 12px;
+            /* margin: 2%; */
+            margin-bottom: 5%;
+            /* width: 500px; */
+
+
+        }
+
+        .spediv_at button {
+
+            padding: 15px;
+            border: none;
+            background-color: #dd0285;
+            color: white;
+            font-weight: 700;
+        }
+        #zipcode input {
+            padding: 9px;
+            width: 50%;
+            margin-left: 0px;
+        }
+
+        #zipcode label {
+
+            margin-left: 3px;
+            /* margin: 4px; */
+        }
+
+        /* #c_buttons_at{
+            /* display: flex; */
+        /* border:2px solid yellow;
+        }  */
+        .cartbutton_at {
+            display: inline;
+            margin: 2%;
+            /* padding:10px; */
+            /* border-bottom: 1px solid rgb(190, 187, 187); */
+        }
+
+        .cartbutton_at Button {
+            padding: 7px;
+            width: 100px;
+            margin-bottom: 7%;
+            margin-top: 7%;
+            /* display: flex;
+            flex-direction:column; */
+            background-color: rgb(214, 21, 86);
+            border: none;
+            color: white;
+            border-radius: 2px;
+        }
+
+        .cartbutton_at Button:hover {
+            background-color: rgb(49, 47, 47);
+            border: none;
+            color: white;
+            border-radius: 2px;
+        }
+
+        #cartheadhead_at {
+            margin-top: 0%;
+            padding: 2%;
+        }
+
+        #item_item_at {
+            margin-left: 130px;
+        }
+
+        #spccart_at {
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        #estimate_at {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .spediv_at span {
+            padding: 10px;
+        }
+
+        .cart_atharva div h3 {
+            font-size: 23px;
+            border-bottom: 0.5px solid grey;
+            /* width: 302px; */
+            margin-top: 3%;
+        }
+
+        #carthead_at {
+            margin: 29px;
+            margin-left: 164px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="to-top">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+    <div class="header_anmol_ks"></div>
+
+
+    <div class="cart_atharva">
+        <h2 id="carthead_at">SHOPPING</h2>
+        <div id="cartmaincontainer_at">
+            <div id="showcartproducts_at">
+                <div class="showcartproductshead_at" id="cartheadhead_at">
+                    <div class="itemdiv_at" id="item_item_at"><b>Item</b></div>
+                    <div class="pricequantitydiv_at">
+                        <span><b>Price</b></span>
+                        <Span><b>Quantity</b></Span>
+                        <span><b>SubTotal</b></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="cartdetails_at">
+                <div>
+                    <h3>Summary</h3>
+                </div>
+                <!-- <hr> -->
+                <div id="estimate_at">Estimate Shipping And Tax</div>
+                <div id="selectcountry_at">
+                    <div><b>country</b></div>
+                    <select name="country" id="selet_at">
+                        <option value="India">India</option>
+                    </select>
+                </div>
+                <div id="selectstate">
+                    <div id="spccart_at"><b>State</b></div>
+                    <select name="state" id="cartstate_at" class="cartcommcont_at">
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkand">Jharkand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerla">Kerla</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+
+                <div id="zipcode">
+                    <div><label for="zipcode"><b>Zip/Postal Code</b></label>
+                        <div>
+                            <br>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <div><b>BestWay</b></div>
+                            <input type="radio">
+                            <label for="bestway">Max 7 Business Days</label>
+                        </div>
+
+                        <div class="spediv_at">
+                            <span>Subtotal</span>
+                            <span id="spedivspan_at">rupee</span>
+                        </div>
+
+                        <div class="spediv_at">
+                            <span>Shipping</span>
+                            <span>&#8377;0.00</span>
+                        </div>
+
+                        <div class="spediv_at">
+                            <span>Order Total Incl. GST</span>
+                            <span id="gst_at">rupee</span>
+                        </div>
+
+                        <div class="spediv_at">
+                            <form action="./checkout.html">
+                                <Button>Proceed To Checkout</Button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer_anmol_ks"></div>
+</body>
+
+<!-- <script type="module" src="../js/cart.js"></script> -->
+
+<script type="module">
+
+    import footer from "../components/footer.js";
+    import header from "../components/header.js";
+
+    var header_anmol_ks = document.querySelector(".header_anmol_ks");
+    header_anmol_ks.innerHTML = header();
+
+    var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
+    footer_anmol_ks.innerHTML = footer();
+
+
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (cart.length == 0) {
+        // showprods.innerHTML="<h1>No Items Added In cart</h1>"
+    }
+    else {
+        cart.forEach(function (product) {
+
+            let showcartproducts = document.getElementById("showcartproducts_at");
+
+            let showprods = document.createElement("div");
+            showprods.setAttribute("class", "showcartproductshead_at");
+
+
+            let carttp_at = document.createElement("div");
+            carttp_at.setAttribute("class", "carttp_at");
+
+
+
+            cart = JSON.parse(localStorage.getItem("cart"));
+
+
+            //item--sectiom
+            let itemdiv = document.createElement("div");
+            itemdiv.setAttribute("class", "itemdiv_at");
+            itemdiv.setAttribute("id", "itemdivjs_at");
+
+            let cartprodimg = document.createElement("img");
+            cartprodimg.src = `${product.img}`;
+
+            let cartprodname = document.createElement("div");
+            cartprodname.innerHTML = `${product.name}`;
+
+
+            //price and quantity section
+
+            let pricediv = document.createElement("div");
+            pricediv.setAttribute("class", "pricequantitydiv_at");
+
+            let price = document.createElement("span");
+            price.innerHTML = `&#8377;${product.price}`;
+
+            let quantity = document.createElement("span");
+            quantity.innerHTML = `${product.quantity}`;
+
+            let subtot = parseInt(product.price) * parseInt(product.quantity);
+
+            let subtotal = document.createElement("span");
+            subtotal.innerHTML = `&#8377;${subtot}`;
+
+            let buttons = document.createElement("div");
+            // buttons.setAttribute("id","c_buttons_at");
+
+            let edit = document.createElement("div");
+            edit.innerHTML = `<Button>Edit</Button>`;
+            edit.setAttribute("class", "cartbutton_at");
+
+            let deletei = document.createElement("div");
+            deletei.innerHTML = `<Button onclick="funcdeleteitem('${product.name}')">Delete</Button>`;
+            deletei.setAttribute("class", "cartbutton_at");
+
+            buttons.append(edit, deletei);
+
+            pricediv.append(price, quantity, subtotal);
+            itemdiv.append(cartprodimg, cartprodname);
+            //  carttp_at.append(pricediv);
+            //  showcartproducts.append(itemdiv,carttp_at);
+
+            showprods.append(itemdiv, pricediv);
+            carttp_at.append(showprods);
+
+            showcartproducts.append(carttp_at, buttons);
+        });
+    }
+
+
+
+
+
+
+
+
+
+    // let tot = document.getElementById("total");
+    // tot.innerHTML=`&#8377;${total}`;
+    cart = JSON.parse(localStorage.getItem("cart"));
+    var k = 0;
+
+    cart.forEach(function (user) {
+        console.log(user.price);
+        console.log(user.quantity);
+        k += (user.price) * (user.quantity);
+
+    });
+
+    console.log(k);
+    let subt = document.getElementById("spedivspan_at");
+    subt.innerHTML = "";
+    subt.innerHTML = `&#8377;${k}`;
+
+    let gst = document.getElementById("gst_at");
+    gst.innerHTML = "";
+    gst.innerHTML = `&#8377;${(k * 1.18).toFixed(2)}`;
+    cart = localStorage.setItem("cart", JSON.stringify(cart));
+
+
+    //if(user.name==delet){
+    //     total -= user.price;
+    //     cart.splice(user,1);
+    //     tot.innerHTML=`${total}`;
+    //     location.reload();
+    // }
+
+    // popup ks
+
+    let makeup_ks_anmol = document.querySelectorAll(".makeup_ks_anmol");
+    // let popup_header_ks = document.querySelectorAll(".popup_header_ks");
+
+    for (var i = 0; i < makeup_ks_anmol.length; i++) {
+        makeup_ks_anmol[i].addEventListener("mouseover", function () {
+            this.classList.toggle("active");
+        });
+
+        makeup_ks_anmol[i].addEventListener("mouseout", function () {
+            this.classList.remove("active");
+        });
+    }
+
+    let cart1 = JSON.parse(localStorage.getItem("cart"));
+    let price_in_cart = document.querySelector(".price-in-cart");
+    console.log(price_in_cart)
+
+    function total_cart_sum_fx() {
+        total_cart_sum = 0;
+        cart1 = JSON.parse(localStorage.getItem("cart"));
+
+        cart1.forEach(element => {
+            //  console.log(element.price)
+            total_cart_sum += Number(element.price);
+            // console.log(total_cart_sum);
+        });
+
+        price_in_cart.innerHTML = "₹" + " " + total_cart_sum;
+    }
+
+    total_cart_sum_fx()
+    const buttontobuy = document.querySelectorAll("#buttontobuy");
+    buttontobuy.forEach((btn) => {
+        btn.addEventListener("click", total_cart_sum_fx)
+    })
+
+    //  console.log(buttontobuy);
+
+    // LOGIN SIGNUP POPUP
+    let login_signup_container = document.querySelector(".login_signup_container");
+    login_signup_container.addEventListener("mouseover", function () {
+        this.classList.toggle("active");
+    })
+
+    login_signup_container.addEventListener("mouseout", function () {
+        this.classList.remove("active");
+    });
+
+    // LOGIN SIGNUP POPUP ENDS 
+
+
+</script>
+
+<script>
+    var total_cart_sum = 0;
+
+    function addtocart(img, name, oldprice, price, discount) {
+        // console.log("addtocart")
+        var temp = {
+            "img": img,
+            "name": name,
+            "oldprice": oldprice,
+            "price": price,
+            "discount": discount
+        };
+
+        // total += price;
+        let cart = JSON.parse(localStorage.getItem("cart"));
+
+        cart.push(temp);
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+
+    }
+
+    function funcdeleteitem(delet) {
+        cart = JSON.parse(localStorage.getItem("cart"));
+        console.log(delet);
+
+        const indedxD = cart.findIndex(user => user.name === delet)
+
+        if (cart[indedxD].quantity > 1) {
+
+            console.log(cart[indedxD].quantity);
+            let v = cart[indedxD].quantity - 1;
+            cart[indedxD].quantity = v;
+
+            console.log(cart[indedxD].quantity);
+            cart = localStorage.setItem("cart", JSON.stringify(cart));
+            location.reload();
+        }
+        else {
+            cart.splice(indedxD, 1);
+            // console.log(cart);
+            cart = localStorage.setItem("cart", JSON.stringify(cart));
+            location.reload();
+        }
+    }
+
+</script>
+
+</html>

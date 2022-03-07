@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/productDisplay.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/af387dc509.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>FAQs</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+      * {
+        margin: 0%;
+        padding: 0%;
+        font-family: "Roboto", sans-serif;
+      }
+
+      :root {
+        --primary-color: rgb(221, 2, 133);
+        --border-color: #ebebeb;
+        --font_light_color: #707070;
+      }
+
+      .body_faqContentBx_ks {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+      }
+
+      .accordion_ks > h3 {
+        margin: 10px;
+        font-size: 100%;
+        font-weight: 600;
+        color: #2c2c2c;
+      }
+
+      .accordion_ks .faqContentBx_ks {
+        position: relative;
+        margin: 10px 10px;
+        border-bottom: 1px solid var(--border-color);
+      }
+      /* .faq_question_ks{
+            border: 1px solid red;
+        } */
+
+      .accordion_ks .faqContentBx_ks .faq_question_ks {
+        position: relative;
+        padding: 10px 0px;
+        cursor: pointer;
+        color: rgb(39, 39, 39);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .faq_question_ks {
+        justify-content: left !important;
+        gap: 40px;
+        align-items: center;
+      }
+      .accordion_ks .faqContentBx_ks .faq_answer_ks {
+        position: relative;
+        margin: 5px;
+        height: 0;
+        transition: height 1.5s ease;
+        overflow: hidden;
+
+        overflow-y: auto;
+      }
+      .faq_answer_ks {
+      }
+      .accordion_ks .faqContentBx_ks.active .faq_answer_ks {
+        font-size: 90%;
+        line-height: 1.5;
+        height: max-content;
+      }
+
+      .accordion_ks .faqContentBx_ks.active .faq_plus_symbol_ks {
+        transform: rotate(45degree);
+      }
+      .faq_plus_symbol_ks {
+        border: 2px solid rgb(39, 39, 39);
+        border-radius: 50%;
+        padding: 3px 5px;
+        font-weight: 900;
+      }
+
+      .body_faqContentBx_ks {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .sidebar_ks {
+        margin-right: 1%;
+        width: 20%;
+      }
+
+      .faq_plus_symbol_ks:hover {
+        color: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="to-top">
+      <i class="fas fa-angle-double-up"></i>
+    </div>
+
+    <div class="header_anmol_ks"></div>
+    <div class="body_faqContentBx_ks">
+      <section class="accordion_ks">
+        <h3>HELP & FAQS</h3>
+
+        <!-- question 1 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>
+              HOW TO CREATE A BEAUTY ACCOUNT AND WHAT ARE THE BENIFITS OF
+              CREATING A ACCOUNT?
+            </h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>
+              You can register on beauty bebo using Register button (<i
+                class="fas fa-user-large"
+              ></i
+              >) on top Right <br />
+              <br /><br />
+
+              Benefits of Registration- <br />
+              Easy and Fast Check out <br />
+              Reward points accumulation <br />
+              Offers Notification
+            </p>
+          </div>
+        </div>
+
+        <!-- question 2 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>HOW TO RESET MY PASSWORD IN CASE I HAVE FORGOT IT</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>
+              Click to my Account- Forgot Password- Enter your E-Mail and you
+              will get a link to reset your password on your mail.
+            </p>
+          </div>
+        </div>
+        <!-- question 3 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>HOW TO CHANGE MY ADDRESS?</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>
+              Login in your account and you will get a button to add more
+              address. Don’t worry; we will remember all your addresses until
+              you delete them.
+            </p>
+          </div>
+        </div>
+        <!-- question 4 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>HOW CAN I PAY FOR MY PURCHASES</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>
+              You can Pay through Net Banking/Credit Card/Debit card/Wallet or
+              Cash on Delivery.
+            </p>
+          </div>
+        </div>
+        <!-- question 5 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>HOW CAN I CONTACT BEAUTYBEBO IN CASE I AM REQUITRED TO?</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>You can always write us on support@beautybebo.com.</p>
+          </div>
+        </div>
+        <!-- question 6 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>CAN I RETURN A PRODUCT?</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>
+              Yes, We have a return policy for our customers. Kindly refer
+              return policy.
+            </p>
+          </div>
+        </div>
+        <!-- question 7 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>WHAT IS MODE OF SHIPPING FOR THE PURCHASED PRODUCTS?</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>
+              We ship the products same day through the ecommerce courier
+              partners.
+            </p>
+          </div>
+        </div>
+        <!-- question 8 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>WILL I GET THE SHIPPING DETAILS ON MY MAIL OR SMS.</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>
+              Yes, You will get the details of the shipping on your mail or
+              phone.
+            </p>
+          </div>
+        </div>
+        <!-- question 9 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>HOW TO CANCEL MY ORDER?</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>
+              You can write to our customer support team on
+              support@beautybebo.com or the cancellation.
+            </p>
+          </div>
+        </div>
+        <!-- question 10 -->
+        <div class="faqContentBx_ks">
+          <div class="faq_question_ks">
+            <div class="faq_plus_symbol_ks">&#43;</div>
+            <h5>HOW WILL I GET MY REFUND IN CASE OF CANCELLARTION OF ORDER?</h5>
+          </div>
+          <div class="faq_answer_ks">
+            <p>The Money will be Refund to original payment method.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="footer_anmol_ks"></div>
+  </body>
+</html>
+<script type="module">
+  import footer from "../components/footer.js";
+  import header from "../components/header.js";
+  var header_anmol_ks = document.querySelector(".header_anmol_ks");
+  header_anmol_ks.innerHTML = header();
+
+  var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
+  footer_anmol_ks.innerHTML = footer();
+
+  const content_array_ks = document.querySelectorAll(".faqContentBx_ks");
+  // var d = document.querySelectorAll(".faq_question_ks");
+  // d.addEventListener("mouseenter", function(){
+  //     console.log(
+  //      "skdjfklsdhfghj"
+  //     )
+  //    changeColor();
+  // } )
+
+  // function changeColor(){
+  //     console.log(4564)
+  //     d.style.color = "red";
+  // }
+
+  var i;
+  for (var i = 0; i < content_array_ks.length; i++) {
+    content_array_ks[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+  }
+  let makeup_ks_anmol = document.querySelectorAll(".makeup_ks_anmol");
+  // let popup_header_ks = document.querySelectorAll(".popup_header_ks");
+
+  for (var i = 0; i < makeup_ks_anmol.length; i++) {
+    makeup_ks_anmol[i].addEventListener("mouseover", function () {
+      this.classList.toggle("active");
+    });
+
+    makeup_ks_anmol[i].addEventListener("mouseout", function () {
+      this.classList.remove("active");
+    });
+  }
+
+  const rotational = document.querySelector(".icon-create");
+
+  rotational.addEventListener("click", toggleMobileMenu);
+
+  function toggleMobileMenu() {
+    rotational.classList.toggle("open-navbar");
+  }
+
+  const mybuttonTop = document.querySelector(".to-top");
+  window.onscroll = function () {
+    scrollTopFunction();
+  };
+  window.onresize = function () {
+    if (window.innerWidth > 940) {
+      rotational.classList.remove("open-navbar");
+    }
+  };
+  function scrollTopFunction() {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      mybuttonTop.style.display = "inline-block";
+    } else {
+      mybuttonTop.style.display = "none";
+    }
+  }
+  const navTop = document.querySelector(".nav-top");
+  mybuttonTop.addEventListener("click", moveTop);
+  function moveTop() {
+    navTop.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
+// =========================================
+let cart = JSON.parse(localStorage.getItem("cart"));
+let price_in_cart = document.querySelector(".price-in-cart");
+  console.log(price_in_cart)
+  
+  function total_cart_sum_fx(){
+    total_cart_sum = 0;
+   cart = JSON.parse(localStorage.getItem("cart"));
+  
+   cart.forEach(element => {
+    //  console.log(element.price)
+    total_cart_sum += Number(element.price);
+    // console.log(total_cart_sum);
+   });
+  
+   price_in_cart.innerHTML = "₹"+ " "+ total_cart_sum;
+  }
+  
+  total_cart_sum_fx()
+ const  buttontobuy = document.querySelectorAll("#buttontobuy");
+ buttontobuy.forEach((btn) => {
+  btn.addEventListener("click", total_cart_sum_fx)
+ })
+
+//  console.log(buttontobuy);
+
+   // LOGIN SIGNUP POPUP
+   let login_signup_container = document.querySelector(".login_signup_container");
+ login_signup_container.addEventListener("mouseover", function() {
+  this.classList.toggle("active");
+ })
+
+ login_signup_container.addEventListener("mouseout", function () {
+      this.classList.remove("active");
+    });
+
+    // LOGIN SIGNUP POPUP ENDS 
+
+</script>
+
+<script>
+  var total_cart_sum = 0;
+  
+    function addtocart(img,name,oldprice,price,discount){
+  // console.log("addtocart")
+  var temp = {
+      "img":img,
+      "name":name,
+      "oldprice":oldprice,
+      "price":price,
+      "discount":discount
+  };
+  
+  // total += price;
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  
+  cart.push(temp);
+  localStorage.setItem("cart",JSON.stringify(cart));
+  
+  
+  }
+
+
+  
+  </script>

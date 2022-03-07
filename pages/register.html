@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/af387dc509.js" crossorigin="anonymous"></script>
+    <title>Create New Customer Account Beauty Bebo</title>
+    <style>
+        input {
+            padding: 10px;
+        }
+
+        #register_cont_at {
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            width: 90%;
+            margin: auto;
+
+        }
+
+        #register_at {
+            width: 70%;
+            /* border: 2px solid purple; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1%;
+        }
+
+        #info_container_at {
+            width: 80%;
+            border: 1px solid #cecece;
+            /* flex-direction: column; */
+            /* align-items: center; */
+            background-color: rgb(248, 248, 248);
+            margin-bottom: 3%;
+            margin-top: 3%;
+        }
+
+        #registerdetails_at {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #registerdetails_at div {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 3%;
+            /* justify-content: center; 
+            align-items: center; */
+            /* border: 2px solid yellow; */
+        }
+
+        #title_at {
+            /* width: 70%; */
+            margin-left: 15%;
+            margin-top: 2%;
+            border-bottom: 1px solid #cecece;
+            font-size: 120%;
+
+        }
+
+        .inp label {
+            margin-bottom: 1%;
+            font-size: 100%;
+            
+        }
+
+        .inp input {
+            padding: 10px;
+            border: 1px solid #cecece;
+        }
+
+        #registerbutton_at {
+            margin-top: 3%;
+            color: white;
+            border: none;
+            background-color: rgb(71, 67, 67);
+            padding: 2%;
+            margin-bottom: 5%;
+            margin-left: 15%;
+            cursor: pointer;
+        }
+
+        #registerbutton_at:hover {
+            background-color: rgb(221, 2, 133);
+        }
+
+        #signin_options_at {
+            display: flex;
+            flex-direction: row;
+            /* border: 2px solid salmon; */
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2%;
+            /* background-color: aqua; */
+        }
+
+        .facebooklogo_at {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: #2d4373;
+            color: #fff;
+            padding: 2%;
+            /* margin: 1%; */
+            width:fit-content;
+            border-radius: 5px;
+
+            align-items: center;
+            justify-content: space-between;
+            /* font-size: 1em; */
+            text-align: center;
+            cursor: pointer;
+        }
+        .facebooklogo_at > div{
+            margin-right: 5px;
+        }
+
+        /* .facebooklogo_at{
+            margin-right: 10px;
+        } */
+
+        /* .logos_login{
+            margin-right: 10px;
+        } */
+
+        .googlelogo_at {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: #dd4b39;
+            color: #fff;
+            padding: 2%;
+            /* margin: 3%; */
+            margin-left: 1%;
+            width:fit-content;
+            /* align-items: center; */
+            /* justify-content: center; */
+            cursor: pointer;
+            /* font-size: 1em; */
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .googlelogo_at > div{
+            margin-right: 5px;
+        }
+
+        #registermainheading_at {
+            /* height: 3rem; */
+            /* border: 2px solid yellow; */
+            /* width: 60%; */
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            font-size: 120%;
+            font-weight: 500;
+            margin-bottom: 2%;
+        }
+
+        @media  (max-width: 1000px){
+        .signin_options_at{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(0, 0, 0);
+
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="to-top">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+    <div class="header_anmol_ks"></div>
+    <div id="register_cont_at">
+        <div id="register_at">
+            <div id="registermainheading_at">CREATE NEW CUSTOMER ACCOUNT</div>
+
+            <div id="signin_options_at">
+                <div class="facebooklogo_at">
+                    <div> <i class="fa fa-facebook-square" class="logos_login" aria-hidden="true"></i></div>
+                   
+                    <div>Sign in with Facebook</div> 
+                </div>
+                <div class="googlelogo_at">
+                    <div><i class="fa-brands fa-google"></i></div>
+                    
+                    <div>Sign in with Google</div>
+                    
+                </div>
+            </div>
+
+            <div>--OR--</div>
+
+            <div id="info_container_at">
+                <div id="title_at">PERSONAL INFORMATION</div>
+
+                <div id="registerdetails_at">
+                    <div class="inp">
+                        <label for="firstname_at">First Name</label>
+                        <input type="text" id="firstname_at" required>
+                    </div>
+
+                    <div class="inp">
+                        <label for="lastname_at">Last Name</label>
+                        <input type="text" id="lastname_at" required>
+                    </div>
+
+                    <div class="inp">
+                        <label for="email_at">Email</label>
+                        <input type="text" id="email_at" required>
+                    </div>
+
+                    <div class="inp">
+                        <label for="phone_at">Phone</label>
+                        <input type="email" id="phone_at" required>
+                    </div>
+
+                    <div class="inp">
+                        <label for="password_at">Password</label>
+                        <input type="password" id="password_at" required>
+                    </div>
+
+                    <div class="inp">
+                        <label for="confirmpassword_at">Confirm Password</label>
+                        <input type="password" id="confirmpassword_at" required>
+                    </div>
+                </div>
+                <button id="registerbutton_at" onclick='sendData()'>Create An Account</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer_anmol_ks">
+
+    </div>
+</body>
+
+
+
+<script >
+    function sendData(){
+        console.log("SDHJFK")
+    }
+</script>
+
+<script type="module">
+    import footer from "../components/footer.js";
+    import header from "../components/header.js";
+
+    var header_anmol_ks = document.querySelector(".header_anmol_ks");
+    header_anmol_ks.innerHTML = header();
+
+    var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
+    footer_anmol_ks.innerHTML = footer();
+
+
+
+
+
+
+
+
+// =========================================
+let cart = JSON.parse(localStorage.getItem("cart"));
+let price_in_cart = document.querySelector(".price-in-cart");
+  console.log(price_in_cart)
+  
+
+
+  function total_cart_sum_fx(){
+    total_cart_sum = 0;
+   cart = JSON.parse(localStorage.getItem("cart"));
+  
+   cart.forEach(element => {
+    //  console.log(element.price)
+    total_cart_sum += Number(element.price);
+    // console.log(total_cart_sum);
+   });
+  
+   price_in_cart.innerHTML = "₹"+ " "+ total_cart_sum;
+  }
+  
+  total_cart_sum_fx()
+ const  buttontobuy = document.querySelectorAll("#buttontobuy");
+ buttontobuy.forEach((btn) => {
+  btn.addEventListener("click", total_cart_sum_fx)
+ })
+
+//  console.log(buttontobuy);
+
+   // LOGIN SIGNUP POPUP
+   let login_signup_container = document.querySelector(".login_signup_container");
+ login_signup_container.addEventListener("mouseover", function() {
+  this.classList.toggle("active");
+ })
+
+ login_signup_container.addEventListener("mouseout", function () {
+      this.classList.remove("active");
+    });
+
+    // LOGIN SIGNUP POPUP ENDS 
+
+</script>
+
+
+<script>
+    var total_cart_sum = 0;
+    
+      function addtocart(img,name,oldprice,price,discount){
+    // console.log("addtocart")
+    var temp = {
+        "img":img,
+        "name":name,
+        "oldprice":oldprice,
+        "price":price,
+        "discount":discount
+    };
+    
+    // total += price;
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    
+    cart.push(temp);
+    localStorage.setItem("cart",JSON.stringify(cart));
+    
+    
+    }
+  
+  
+    
+    </script>
+
+    <script>
+        let reg_users = localStorage.getItem("reg_users");
+if (reg_users == null) {
+    localStorage.setItem("reg_users", JSON.stringify([]));
+}
+
+function sendData() {
+    let firstname = document.getElementById("firstname_at").value;
+    let lastname = document.getElementById("lastname_at").value;
+    let email = document.getElementById("email_at").value;
+    let phone = document.getElementById("phone_at").value;
+    let password = document.getElementById("password_at").value;
+    let confirmpassword = document.getElementById("confirmpassword_at").value;
+    
+    let temp={
+        "firstname" :firstname,
+        "lastname" :lastname,
+        "email": email,
+        "phone":phone,
+        "password":password
+    };
+    console.log(temp);
+    if (confirmpassword != password) {
+        alert("Password Not Matching");
+        location.reload();
+    }
+    else {
+        reg_users = JSON.parse(localStorage.getItem("reg_users"));
+        if(reg_users.length==0){
+            reg_users.push(temp);
+            // console.log(reg_users);
+            localStorage.setItem("reg_users", JSON.stringify(reg_users));
+            // window.location.href = "./login.html";
+        }
+
+        let v = true;
+        reg_users.forEach(function (user) {
+            // console.log(user.firstname);
+            if (user.email == email || user.phone == phone) {
+                alert("User Already Registered");
+                location.reload();
+                v = false;
+                return;
+            }
+        });
+
+
+        if (v == true) {
+            reg_users.push({ firstname, lastname, email, phone, password, confirmpassword });
+            console.log(reg_users);
+            localStorage.setItem("reg_users", JSON.stringify(reg_users));
+            window.location.href = "./login.html";
+        }
+    }
+
+    // localStorage.clear();
+}
+
+// export default sendData;
+
+// 
+
+    </script>
+
+</html>

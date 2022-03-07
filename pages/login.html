@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/af387dc509.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #container{
+            /* width: 80%; */
+            /* border: 2px solid red; */
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-family:sans-serif;
+            /* background-color: aqua; */
+            margin: 30px auto 30px auto;
+        }
+
+        #loginsection_at{
+            width: 80%;
+            /* border:2px solid green; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-bottom: 30px;
+            /* margin-top: 5%; */
+            margin-left: 5%;
+            margin-right: 5%;
+            grid-gap: 50px;
+            /* background-color: aliceblue; */
+        }
+        
+        .logandregiter_at{
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr); */
+            border: 1px solid #cecece;
+            /* height: 40vh; */
+            /* background-color:aquamarine; */
+            padding: 5%;
+
+        }
+        .logandregiter_at>div{
+            margin-bottom:6%;
+            /* border: 2px solid purple; */
+        }
+        .logandregiter_at form{
+            display: flex;
+            flex-direction: column;
+            margin-bottom:3%;
+            /* background-color: brown; */
+            /* padding: 2%; */
+        }
+
+        form input{
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border: 1px solid #cecece;
+        }
+        .logandregiter_at span button{
+            /* display: flex; */
+            /* flex-direction:; */
+            /* margin:7%;
+            border: 2px solid yellow; */ 
+            /* background-color: bisque; */
+            margin: 0%;
+         }
+        
+        .logandregiter_at span{
+            display: flex;
+            /* flex-direction: column; */
+            /* margin:7%; */
+            /* margin:0px;
+            padding: 0px; */
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+        .logandregiter_at button{
+            /* margin-left:7%; */
+            padding: 0%;
+            /* margin-right: 5%; */
+            height: 38px;
+            width:31%;
+            color: white;
+            border:none;
+            background-color: rgb(71, 67, 67);
+            cursor: pointer;
+        }
+        .logandregiter_at button:hover{
+            background-color:rgb(221, 2, 133) ;
+        }
+        .login_heading_at{
+            cursor:pointer;
+            border-bottom: 1px solid #cecece;
+            font-size: 99%;
+            font-weight:600;
+            color: rgb(48, 47, 47);
+        }
+
+        .logintext_at{
+            font-size: 80%;
+            color: rgb(59, 59, 59);
+        }
+        #forgotpwd_at{
+            text-decoration: none;
+            
+            color:black;
+        }
+        #forgotpwd_at:hover {
+            /* text-decoration: none; */
+            color:rgb(221, 2, 133);
+           
+        }
+
+        .label_at{
+            margin-bottom: 2% ;
+            margin-top: 1% ;
+        }
+
+        .input_at{
+            height: 30px;
+            /* margin-bottom: 2%; */
+        }
+        .loginheader_at{
+            width: 72%;
+            font-size: 150%;
+            padding: 10px;
+            font-weight: 300;
+            /* border: 2px solid green; */
+            margin:auto;
+            color: rgb(85, 83, 83);
+        }
+        @media (max-width:960px){
+            #loginsection_at{
+            /* width: 80%;
+            /* border:2px solid green; */
+            display: grid; 
+            grid-template-columns: repeat(1,1fr);
+            /* margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            grid-gap: 50px; */
+        }
+        .logandregiter_at  button{
+            
+            padding-left: 2%;
+            padding-left: 2%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="to-top">
+        <i class="fas fa-angle-double-up"></i>
+      </div>
+    <div class="header_anmol_ks"></div>
+    <div class="loginheader_at"><h4>Customer Login</h4></div>
+
+    <div id="container">
+        <div id="loginsection_at">
+            
+            <!-- input section -->
+            <div id="logininput_at" class="logandregiter_at">
+                
+                 <div class="login_heading_at">REGISTRED CUSTOMERS</div>
+                  <div class="logintext_at">If you have an account, sign in with your email address.</div>
+                    <form action="">
+                        <label for="email" class="loginlabel_at">Email: </label>
+                        <input type="email" id="loginemail_at" class="input_at">
+                        <label for="password" class="label_at">Password: </label>
+                        <input type="password" id="loginpassword_at" class="input_at">
+                    </form>
+                    <!-- Button -->
+                    <span>
+                        <button class="login_button_at" onclick="checkdb()">SIGN IN</button>
+                        <a href="#" id="forgotpwd_at"> Forgot Your Password?</a>
+                    </span>
+
+                </div>
+
+                <div id="login_register_at" class="logandregiter_at">
+                    <div class="login_heading_at">NEW CUSTOMERS</div>
+                    <div class="logintext_at">Creating an account has many benefits: check out faster, keep more than one address, track orders and more.
+                    </div>
+                    <button class="login_button_at" onclick="gotoregister()">CREATE AN ACCOUNT</button>
+                </div>
+         </div>    
+    </div>
+    <div class="footer_anmol_ks">
+
+    </div>
+</body>
+<!-- <script  type = "module" src="../js/login.js">
+
+</script> -->
+<script type="module">
+    import footer from "../components/footer.js";
+    import header from "../components/header.js";
+
+    var header_anmol_ks =  document.querySelector(".header_anmol_ks");
+    header_anmol_ks.innerHTML = header();
+
+    var footer_anmol_ks = document.querySelector(".footer_anmol_ks");
+    footer_anmol_ks.innerHTML = footer();
+
+
+    // =========================================
+let cart = JSON.parse(localStorage.getItem("cart"));
+let price_in_cart = document.querySelector(".price-in-cart");
+  console.log(price_in_cart)
+  
+  function total_cart_sum_fx(){
+    total_cart_sum = 0;
+   cart = JSON.parse(localStorage.getItem("cart"));
+  
+   cart.forEach(element => {
+    //  console.log(element.price)
+    total_cart_sum += Number(element.price);
+    // console.log(total_cart_sum);
+   });
+  
+   price_in_cart.innerHTML = "₹"+ " "+ total_cart_sum;
+  }
+  
+  total_cart_sum_fx()
+ const  buttontobuy = document.querySelectorAll("#buttontobuy");
+ buttontobuy.forEach((btn) => {
+  btn.addEventListener("click", total_cart_sum_fx)
+ })
+
+//  console.log(buttontobuy);
+
+   // LOGIN SIGNUP POPUP
+   let login_signup_container = document.querySelector(".login_signup_container");
+ login_signup_container.addEventListener("mouseover", function() {
+  this.classList.toggle("active");
+ })
+
+ login_signup_container.addEventListener("mouseout", function () {
+      this.classList.remove("active");
+    });
+
+    // LOGIN SIGNUP POPUP ENDS 
+
+</script>
+<script>
+        
+let reg_users = localStorage.getItem("reg_users");
+if (reg_users == null) {
+    localStorage.setItem("reg_users", JSON.stringify([]));
+}
+
+function checkdb(){
+    let email = document.getElementById("loginemail_at").value;
+    let password = document.getElementById("loginpassword_at").value;
+    
+    //Get  data from local storage
+
+    reg_users = JSON.parse(localStorage.getItem("reg_users"));
+    if(reg_users.length==0){
+        alert("User Not Registered");
+        location.href("./register.html");
+    }
+    else{
+
+        let v = false;
+        reg_users.forEach(function(user){
+            if(user.email==email && user.password == password){
+                alert("Login Successfull!!!");
+                v=true;
+                // location.reload();
+                location.href = "../index.html"
+                return;
+            }
+            else if(user.email == email && user.password != password){
+                alert("Wrong Password Please Try Again");
+                v=true;
+                location.reload();
+                return;
+            }
+        });
+       
+
+
+        if(v==false){
+                alert("User Not Registered");
+                location.reload();
+        }
+    }
+}
+
+function gotoregister(){
+    window.location.href = "./register.html";
+}
+
+
+// popup ks
+
+let makeup_ks_anmol = document.querySelectorAll(".makeup_ks_anmol");
+  // let popup_header_ks = document.querySelectorAll(".popup_header_ks");
+
+  for (var i = 0; i < makeup_ks_anmol.length; i++) {
+    makeup_ks_anmol[i].addEventListener("mouseover", function () {
+      this.classList.toggle("active");
+    });
+
+    makeup_ks_anmol[i].addEventListener("mouseout", function () {
+      this.classList.remove("active");
+    });
+  }
+
+
+
+//   =========================================
+var total_cart_sum = 0;
+  
+  function addtocart(img,name,oldprice,price,discount){
+// console.log("addtocart")
+var temp = {
+    "img":img,
+    "name":name,
+    "oldprice":oldprice,
+    "price":price,
+    "discount":discount
+};
+
+// total += price;
+let cart = JSON.parse(localStorage.getItem("cart"));
+
+cart.push(temp);
+localStorage.setItem("cart",JSON.stringify(cart));
+
+
+}
+
+
+
+// ====================================
+</script>
+</html>
