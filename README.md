@@ -8,12 +8,12 @@ Summary:-  We cloned a very well known website BeautyBebo.com where user can see
 
 
 
-Tech Used:- Html,css,Javascript,Json
+Tech Used:- Html,CSS3, JavaScript, JSON-Server
 
 
 
 
 
-Contributors:- Kuldeep Singh
-	       Anmol Jain
+Contributors:- Kuldeep Singh <br>
+	       Anmol Jain<br>
 	       Atharva Tribhuwane  
