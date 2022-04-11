@@ -1,7 +1,6 @@
 # Beauty-Bebo
 
-![alt text](https://i.ibb.co/z6ScjVP/screencapture-harmonious-taiyaki-a9ee8e-netlify-app-2022-04-11-20-15-46.png)
-![alt text](https://i.ibb.co/WfZKvw2/screencapture-harmonious-taiyaki-a9ee8e-netlify-app-pages-hair-html-2022-04-11-20-16-22.png)
+
 
 
 Summary:-  We cloned a very well known website BeautyBebo.com where user can see products category wise as well as
@@ -22,3 +21,6 @@ Tech Used:- Html,CSS3, JavaScript, JSON-Server
 Contributors:- Kuldeep Singh <br>
 	       Anmol Jain<br>
 	       Atharva Tribhuwane  
+	       
+![alt text](https://i.ibb.co/z6ScjVP/screencapture-harmonious-taiyaki-a9ee8e-netlify-app-2022-04-11-20-15-46.png)
+![alt text](https://i.ibb.co/WfZKvw2/screencapture-harmonious-taiyaki-a9ee8e-netlify-app-pages-hair-html-2022-04-11-20-16-22.png)
