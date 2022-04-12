@@ -119,7 +119,7 @@
   display: flex;
 }
 
-.login_signup_container.active .login_signup_popup{
+.login_signup_container.active .login_signup_popup {
   display: flex;
 }
 
@@ -194,7 +194,7 @@
   font-weight: 400;
 }
 
-.login_signup_popup{
+.login_signup_popup {
   position: absolute;
 
   flex-direction: column;
@@ -214,22 +214,21 @@
   cursor: pointer;
 }
 
-.login_signup_popup a > div{
+.login_signup_popup a > div {
   padding: 10px;
   margin-bottom: 5px;
   border-bottom: 1px solid #cecece;
 }
 
-.login_signup_popup a{
+.login_signup_popup a {
   text-decoration: none;
   color: black;
 }
 
-.login_signup_popup > div:hover{
-color: #dd0285;
-font-size: 95%;
+.login_signup_popup > div:hover {
+  color: #dd0285;
+  font-size: 95%;
 }
-
 
 .popup_menu_ks > div {
   display: flex;
@@ -964,6 +963,7 @@ footer .fa {
 .fix-nav-relative,
 .nav-top {
   position: relative;
+  width: 100%;
 }
 .nav-top:hover {
   cursor: pointer;
@@ -1094,7 +1094,7 @@ select {
     align-items: stretch;
   }
   .fix-nav-relative {
-    width: 150%;
+    width: 100%;
   }
   .fix-nav-absolute {
     width: 20%;
@@ -1148,10 +1148,10 @@ select {
 }
 @media only screen and (max-width: 740px) {
   .fix-nav-relative {
-    width: 150%;
+    width: 100%;
   }
   .fix-nav-absolute {
-    width: 20%;
+    width: 10%;
   }
   .nav-middle-part {
     display: block;
